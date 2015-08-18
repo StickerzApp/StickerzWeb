@@ -3,8 +3,8 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
-<t:insertDefinition attribute=".template.default">
-	<t:putAttribute attribute="middle" >
+<t:insertDefinition name=".template.default">
+	<t:putAttribute name="middle" >
 		<div class="palco">
 		<div class="logmod__container">
 		      <ul class="logmod__tabs">
