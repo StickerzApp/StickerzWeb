@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE white-list [
+	<!ELEMENT login-page (#PCDATA)>
+	<!ELEMENT static-resource (#PCDATA)*>
+	<!ELEMENT pattern (#PCDATA)>
+	<!ELEMENT public (pattern*)>
+	<!ELEMENT private (pattern*)>
+	<!ELEMENT ignore (pattern*)>
+	
+]>
+<white-list>
+	
+	<login-page>/index.jsp</login-page>
+	
+	<static-resource>/web/**</static-resource>
+
+	<public>
+		<pattern>/*/**</pattern>
+	</public>
+	
+	<private>
+		<pattern>/abrirPortal*/**</pattern>
+	</private>
+	
+	<ignore>
+		<pattern></pattern>
+	</ignore>
+</white-list>
