@@ -35,54 +35,6 @@
 		
 
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <script type="text/javascript">
-			var $ = jQuery.noConflict();
-				$(function() {
-					$('#activator').click(function(){
-						$('#box').animate({'top':'0px'},500);
-					});
-					$('#boxclose').click(function(){
-					$('#box').animate({'top':'-700px'},500);
-					});
-				});
-				$(document).ready(function(){
-				
-					$("#userinfo").mouseover(function () {
-				    	$('#submenu').show();
-					});
-				
-					$("#userinfo").mouseout(function () {
-				    	$('#submenu').hide();
-					});
-					
-				//Hide (Collapse) the toggle containers on load
-				$(".toggle_container").hide(); 
-				//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-				$(".trigger").click(function(){
-					$(this).toggleClass("active").next().slideToggle("slow");
-						return false; //Prevent the browser jump to the link anchor
-				});
-				
-				if($('#codigoTamanho').val() != null && $('#codigoTamanho').val() != ''){
-					var codigoTamanhoDados = $('#codigoTamanho').val();
-					$('#tamanho'[rel=codigoTamanhoDados]).removeClass("naoSelecionado");
-					$('#tamanho'[rel=codigoTamanhoDados]).addClass("selecionado");
-				}
-			});
-				
-
-			function selecionaTamanho(divTamanho){
-				$('#codigoTamanho').val();
-				$('#tamanhos #tamanho').each((function (i, el) {
-			          $(el).removeClass("selecionado");
-			          $(el).addClass("naoSelecionado");
-		        }));
-	          	$(divTamanho).removeClass("naoSelecionado");
-	          	$(divTamanho).addClass("selecionado");
-	          	
-				$('#codigoTamanho').val($(divTamanho).attr("rel"));
-			}	
-		</script>
 		<t:insertAttribute name="htmlHeader" />
 	</head>
 	
