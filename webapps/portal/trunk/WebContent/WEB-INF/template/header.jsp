@@ -72,8 +72,8 @@
                             <a href="#" class="show-search"><i class="fa fa-user"></i></a>
                             <div class="search-form">
                                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
-                                    <input type="text" value="" name="s" id="s" placeholder="Usuário">
-                                    <input type="text" value="" name="s" id="s" placeholder="Senha">
+                                    <input type="text" value="" name="usuario" id="email" placeholder="Email">
+                                    <input type="password" value="" name="senha" id="senha" placeholder="Senha">
                                 </form>
                             </div>
                         </div>

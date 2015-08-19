@@ -89,9 +89,9 @@ $(document).ready(function ($) {
 	
 	$('.show-search').click(function() {
 		$('.search-form').fadeIn(300);
-		$('.search-form input').focus();
+		$('.search-form #usuario').focus();
 	});
-	$('.search-form input').blur(function() {
+	$('.search-form #senha').blur(function() {
 		$('.search-form').fadeOut(300);
 	});
 	
