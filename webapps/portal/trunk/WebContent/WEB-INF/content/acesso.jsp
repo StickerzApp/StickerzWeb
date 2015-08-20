@@ -9,43 +9,43 @@
        
         <!-- Start Services Section -->
              <!-- Start Portfolio Section -->
-<!--         <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;"> -->
-<!--             <div class="container"> -->
-<!--                 <div class="row"> -->
+        <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+            <div class="container">
+                <div class="row">
 <!--                       Start Purchase Section -->
-<!-- 				        <div class="section purchase"> -->
-<!-- 				            <div class="container"> -->
+				        <div class="section purchase">
+				            <div class="container">
 <!-- 				                Start Video Section Content -->
-<!-- 				                <div class="section-video-content text-center"> -->
+				                <div class="section-video-content text-center">
 				
 <!-- 				                    Start Animations Text -->
-<!-- 				                    <h1 class="fittext wite-text uppercase tlt"> -->
-<%-- 				                      <span class="texts"> --%>
-<%-- 				                        <span>Modern</span> --%>
-<%-- 				                        <span>Clean</span> --%>
-<%-- 				                        <span>Awesome</span> --%>
-<%-- 				                        <span>Cool</span> --%>
-<%-- 				                        <span>Great</span> --%>
-<%-- 				                      </span> --%>
-<%-- 				                        Margo Template is Ready for <br/>Business, Agency <strong>or</strong> Creative Portfolios --%>
-<!-- 				                    </h1> -->
+				                    <h1 class="fittext wite-text uppercase tlt">
+				                      <span class="texts">
+				                        <span>Modern</span>
+				                        <span>Clean</span>
+				                        <span>Awesome</span>
+				                        <span>Cool</span>
+				                        <span>Great</span>
+				                      </span>
+				                        Margo Template is Ready for <br/>Business, Agency <strong>or</strong> Creative Portfolios
+				                    </h1>
 <!-- 				                    End Animations Text -->
 				
 				
 <!-- 				                    Start Buttons -->
-<!-- 				                    <a href="#" class="btn-system btn-large"><i class="fa fa-tasks"></i> Check Out Features</a> -->
-<!-- 				                    <a href="#" class="btn-system btn-large btn-wite"><i class="fa fa-download"></i> Purchase This Now</a> -->
+				                    <a href="#" class="btn-system btn-large"><i class="fa fa-tasks"></i> Check Out Features</a>
+				                    <a href="#" class="btn-system btn-large btn-wite"><i class="fa fa-download"></i> Purchase This Now</a>
 				
-<!-- 				                </div> -->
+				                </div>
 <!-- 				                End Section Content -->
 				
-<!-- 				            </div>.container -->
-<!-- 				        </div> -->
+				            </div><!-- .container -->
+				        </div>
 <!-- 				        End Purchase Section -->
                     
-<!--                               </div>.row -->
-<!--             </div>.container -->
-<!--         </div> -->
+                              </div><!-- .row -->
+            </div><!-- .container -->
+        </div>
         <!-- End Services Section -->
                     
                             <div class="section service">
@@ -687,194 +687,194 @@
             
             
             
-            <!-- Start Pricing Table Section -->
-            <div class=" section pricing-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!-- Start Big Heading -->
-                            <div class="big-title text-center">
-                                <h1>We Have Nice Pricing Plans For <strong>You!</strong></h1>
-                            </div>
-                            <!-- End Big Heading -->
+<!--             Start Pricing Table Section -->
+<!--             <div class=" section pricing-section"> -->
+<!--                 <div class="container"> -->
+<!--                     <div class="row"> -->
+<!--                         <div class="col-md-12"> -->
+<!--                             Start Big Heading -->
+<!--                             <div class="big-title text-center"> -->
+<%--                                 <h1>We Have Nice Pricing Plans For <strong>You!</strong></h1> --%>
+<!--                             </div> -->
+<!--                             End Big Heading -->
 					
-                            <!-- Text -->
-                            <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                        </div>
-                    </div>
+<!--                             Text -->
+<!--                             <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> -->
+<!--                         </div> -->
+<!--                     </div> -->
                     
-                    <div class="row pricing-tables">
+<!--                     <div class="row pricing-tables"> -->
                         
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="pricing-table">
-							<div class="plan-name">
-								<h3>Basic</h3>
-							</div>
-							<div class="plan-price">
-								<div class="price-value">$49<span>.00</span></div>
-								<div class="interval">per month</div>
-							</div>
-							<div class="plan-list">
-								<ul>
-									<li><strong>40 GB</strong> Storage</li>
-									<li><strong>40GB</strong> Transfer</li>
-									<li><strong>10</strong> Domains</li>
-									<li><strong>20</strong> Projects</li>
-									<li><strong>Free</strong> installation</li>
-								</ul>
-							</div>
-							<div class="plan-signup">
-								<a href="#" class="btn-system btn-small">Sign Up Now</a>
-							</div>
-						</div>
-                        </div>
+<!--                         <div class="col-md-3 col-sm-3 col-xs-12"> -->
+<!--                             <div class="pricing-table"> -->
+<!-- 							<div class="plan-name"> -->
+<!-- 								<h3>Basic</h3> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-price"> -->
+<%-- 								<div class="price-value">$49<span>.00</span></div> --%>
+<!-- 								<div class="interval">per month</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-list"> -->
+<!-- 								<ul> -->
+<%-- 									<li><strong>40 GB</strong> Storage</li> --%>
+<%-- 									<li><strong>40GB</strong> Transfer</li> --%>
+<%-- 									<li><strong>10</strong> Domains</li> --%>
+<%-- 									<li><strong>20</strong> Projects</li> --%>
+<%-- 									<li><strong>Free</strong> installation</li> --%>
+<!-- 								</ul> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-signup"> -->
+<!-- 								<a href="#" class="btn-system btn-small">Sign Up Now</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!--                         </div> -->
                         
-						<div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="pricing-table highlight-plan">
-							<div class="plan-name">
-								<h3>Advanced</h3>
-							</div>
-							<div class="plan-price">
-								<div class="price-value">$99<span>.00</span></div>
-								<div class="interval">per month</div>
-							</div>
-							<div class="plan-list">
-								<ul>
-									<li><strong>40 GB</strong> Storage</li>
-									<li><strong>40GB</strong> Transfer</li>
-									<li><strong>10</strong> Domains</li>
-									<li><strong>20</strong> Projects</li>
-									<li><strong>Free</strong> installation</li>
-								</ul>
-							</div>
-							<div class="plan-signup">
-								<a href="#" class="btn-system btn-small border-btn">Sign Up Now</a>
-							</div>
-						</div>
-                        </div>
-                        
-                        
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="pricing-table">
-							<div class="plan-name">
-								<h3>Professional</h3>
-							</div>
-							<div class="plan-price">
-								<div class="price-value">$199<span>.00</span></div>
-								<div class="interval">per month</div>
-							</div>
-							<div class="plan-list">
-								<ul>
-									<li><strong>40 GB</strong> Storage</li>
-									<li><strong>40GB</strong> Transfer</li>
-									<li><strong>10</strong> Domains</li>
-									<li><strong>20</strong> Projects</li>
-									<li><strong>Free</strong> installation</li>
-								</ul>
-							</div>
-							<div class="plan-signup">
-								<a href="#" class="btn-system btn-small">Sign Up Now</a>
-							</div>
-						</div>
-                        </div>
+<!-- 						<div class="col-md-3 col-sm-3 col-xs-12"> -->
+<!--                             <div class="pricing-table highlight-plan"> -->
+<!-- 							<div class="plan-name"> -->
+<!-- 								<h3>Advanced</h3> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-price"> -->
+<%-- 								<div class="price-value">$99<span>.00</span></div> --%>
+<!-- 								<div class="interval">per month</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-list"> -->
+<!-- 								<ul> -->
+<%-- 									<li><strong>40 GB</strong> Storage</li> --%>
+<%-- 									<li><strong>40GB</strong> Transfer</li> --%>
+<%-- 									<li><strong>10</strong> Domains</li> --%>
+<%-- 									<li><strong>20</strong> Projects</li> --%>
+<%-- 									<li><strong>Free</strong> installation</li> --%>
+<!-- 								</ul> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-signup"> -->
+<!-- 								<a href="#" class="btn-system btn-small border-btn">Sign Up Now</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!--                         </div> -->
                         
                         
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="pricing-table">
-							<div class="plan-name">
-								<h3>Extreme</h3>
-							</div>
-							<div class="plan-price">
-								<div class="price-value">$299<span>.00</span></div>
-								<div class="interval">per month</div>
-							</div>
-							<div class="plan-list">
-								<ul>
-									<li><strong>40 GB</strong> Storage</li>
-									<li><strong>40GB</strong> Transfer</li>
-									<li><strong>10</strong> Domains</li>
-									<li><strong>20</strong> Projects</li>
-									<li><strong>Free</strong> installation</li>
-								</ul>
-							</div>
-							<div class="plan-signup">
-								<a href="#" class="btn-system btn-small">Sign Up Now</a>
-							</div>
-						</div>
-                        </div>
+<!--                         <div class="col-md-3 col-sm-3 col-xs-12"> -->
+<!--                             <div class="pricing-table"> -->
+<!-- 							<div class="plan-name"> -->
+<!-- 								<h3>Professional</h3> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-price"> -->
+<%-- 								<div class="price-value">$199<span>.00</span></div> --%>
+<!-- 								<div class="interval">per month</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-list"> -->
+<!-- 								<ul> -->
+<%-- 									<li><strong>40 GB</strong> Storage</li> --%>
+<%-- 									<li><strong>40GB</strong> Transfer</li> --%>
+<%-- 									<li><strong>10</strong> Domains</li> --%>
+<%-- 									<li><strong>20</strong> Projects</li> --%>
+<%-- 									<li><strong>Free</strong> installation</li> --%>
+<!-- 								</ul> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-signup"> -->
+<!-- 								<a href="#" class="btn-system btn-small">Sign Up Now</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!--                         </div> -->
+                        
+                        
+<!--                         <div class="col-md-3 col-sm-3 col-xs-12"> -->
+<!--                             <div class="pricing-table"> -->
+<!-- 							<div class="plan-name"> -->
+<!-- 								<h3>Extreme</h3> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-price"> -->
+<%-- 								<div class="price-value">$299<span>.00</span></div> --%>
+<!-- 								<div class="interval">per month</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-list"> -->
+<!-- 								<ul> -->
+<%-- 									<li><strong>40 GB</strong> Storage</li> --%>
+<%-- 									<li><strong>40GB</strong> Transfer</li> --%>
+<%-- 									<li><strong>10</strong> Domains</li> --%>
+<%-- 									<li><strong>20</strong> Projects</li> --%>
+<%-- 									<li><strong>Free</strong> installation</li> --%>
+<!-- 								</ul> -->
+<!-- 							</div> -->
+<!-- 							<div class="plan-signup"> -->
+<!-- 								<a href="#" class="btn-system btn-small">Sign Up Now</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!--                         </div> -->
 						
 						
-					</div>
-                    </div>
-                </div>
-            <!-- End Pricing Table Section -->
+<!-- 					</div> -->
+<!--                     </div> -->
+<!--                 </div> -->
+<!--             End Pricing Table Section -->
         
         
         
         
-        <!-- Start Client/Partner Section -->
-        <div class="partner">
-        <div class="container">
-            <div class="row">
+<!--         Start Client/Partner Section -->
+<!--         <div class="partner"> -->
+<!--         <div class="container"> -->
+<!--             <div class="row"> -->
 
-                <!-- Start Big Heading -->
-		<div class="big-title text-center">
-			<h1>Our Happy <strong>Clients</strong></h1>
-			<p class="title-desc">Partners We Work With</p>
-		</div>
-		<!-- End Big Heading -->
+<!--                 Start Big Heading -->
+<!-- 		<div class="big-title text-center"> -->
+<%-- 			<h1>Our Happy <strong>Clients</strong></h1> --%>
+<!-- 			<p class="title-desc">Partners We Work With</p> -->
+<!-- 		</div> -->
+<!-- 		<!-- End Big Heading --> -->
 		
-		<!--Start Clients Carousel-->
-		<div class="our-clients">
-			<div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5" data-navigation="true">
+<!-- 		<!--Start Clients Carousel--> -->
+<!-- 		<div class="our-clients"> -->
+<!-- 			<div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5" data-navigation="true"> -->
 				
-				<!-- Client 1 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c1.png" alt="" /></a>
-				</div>
+<!-- 				Client 1 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c1.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-				<!-- Client 2 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c2.png" alt="" /></a>
-				</div>
+<!-- 				Client 2 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c2.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-				<!-- Client 3 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c3.png" alt="" /></a>
-				</div>
+<!-- 				Client 3 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c3.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-				<!-- Client 4 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c4.png" alt="" /></a>
-				</div>
+<!-- 				Client 4 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c4.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-				<!-- Client 5 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c5.png" alt="" /></a>
-				</div>
+<!-- 				Client 5 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c5.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-				<!-- Client 6 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c6.png" alt="" /></a>
-				</div>
+<!-- 				Client 6 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c6.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-				<!-- Client 7 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c7.png" alt="" /></a>
-				</div>
+<!-- 				Client 7 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c7.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-				<!-- Client 8 -->
-				<div class="client-item item">
-					<a href="#"><img src="web/images/c8.png" alt="" /></a>
-				</div>
+<!-- 				Client 8 -->
+<!-- 				<div class="client-item item"> -->
+<!-- 					<a href="#"><img src="web/images/c8.png" alt="" /></a> -->
+<!-- 				</div> -->
 				
-			</div>
-		</div>
-		<!-- End Clients Carousel -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-        </div>
-        <!-- End Client/Partner Section -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 		<!-- End Clients Carousel --> -->
+<!--             </div>.row -->
+<!--         </div>.container -->
+<!--         </div> -->
+<!--         End Client/Partner Section -->
 	</t:putAttribute>
 </t:insertDefinition>
 
