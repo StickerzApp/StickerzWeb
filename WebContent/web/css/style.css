@@ -175,14 +175,11 @@ a.main-button, input[type="submit"] {
     font-weight: 300;
     text-transform: uppercase;
     padding: 6px 16px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
+    margin-bottom: 4px;
 }
 
 a.main-button:hover, input[type="submit"]:hover {
@@ -196,6 +193,7 @@ a.main-button i {
 
 input[type="submit"] {
 	border: none;
+	color: #fff;
 }
 
 .tooltip .tooltip-inner {
@@ -764,6 +762,7 @@ ul.social-list li:last-child a i {
 	display: none;
 	top: 40px;
 	padding: 10px 10px 10px 10px;
+	
 }
 
 .navbar .search-form:before {
@@ -784,11 +783,7 @@ ul.social-list li:last-child a i {
 }
 
 .navbar .search-form form input {
-	border: 2px solid #ccc;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
+	border: 1px solid #ccc;
 	padding: 5px 14px;
 	z-index: 22;
 	color: #9d9d9d;
@@ -798,7 +793,7 @@ ul.social-list li:last-child a i {
   	-webkit-box-shadow: none;
 	outline: none;
 	box-shadow: none;
-	margin: 4px 4px;
+	margin: 10px 10px;
 }
 
 .navbar .search-form form {
@@ -806,6 +801,8 @@ ul.social-list li:last-child a i {
 	right: 0;
 	top: 0;
 	z-index: 20;
+	border: 1px solid #ddd;
+	background-color: white;
 }
 
 
