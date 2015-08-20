@@ -11,7 +11,15 @@
             <div class="top-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-1">
+                            <!-- Start Social Links -->
+                            <ul class="social-list" >
+                                <li>
+                                    <a class="google itl-tooltip" data-placement="bottom" title="Algum problema ?" href="#"><i class="fa fa-life-bouy"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-11">
                             <!-- Start Social Links -->
                             <ul class="social-list">
                                 <li>
@@ -59,17 +67,12 @@
                                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
                                     <input type="text" value="" name="usuario" id="email" placeholder="Email">
                                     <input type="password" value="" name="senha" id="senha" placeholder="Senha">
+                                    <a href="#" class="main-button">Entrar</a> 
                                 </form>
                             </div>
                         </div>
                         <!-- End login form -->
-                        <!-- Start Navigation List -->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                            	<a href="#">Suporte</a>
-                            </li>
-                        </ul>
-                        <!-- End Navigation List -->
+                       
                     </div>
                 </div>
             </div>
