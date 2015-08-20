@@ -24,25 +24,10 @@
                                     <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
                                 </li>
                                 <li>
-                                    <a class="dribbble itl-tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a class="flickr itl-tooltip" data-placement="bottom" title="Flickr" href="#"><i class="fa fa-flickr"></i></a>
-                                </li>
-                                <li>
-                                    <a class="tumblr itl-tooltip" data-placement="bottom" title="Tumblr" href="#"><i class="fa fa-tumblr"></i></a>
-                                </li>
-                                <li>
                                     <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
                                 </li>
                                 <li>
-                                    <a class="vimeo itl-tooltip" data-placement="bottom" title="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
-                                </li>
-                                <li>
-                                    <a class="skype itl-tooltip" data-placement="bottom" title="Skype" href="#"><i class="fa fa-skype"></i></a>
+                                    <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-youtube"></i></a>
                                 </li>
                             </ul>
                             <!-- End Social Links -->
@@ -81,19 +66,7 @@
                         <!-- Start Navigation List -->
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a class="active" href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3.html">Como funciona</a>
-                                <ul class="dropdown">
-                                    <li><a href="portfolio-2.html">1</a>
-                                    </li>
-                                    <li><a href="portfolio-3.html">2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                            	<a href="contact.html">Contato</a>
+                            	<a href="#">Suporte</a>
                             </li>
                         </ul>
                         <!-- End Navigation List -->

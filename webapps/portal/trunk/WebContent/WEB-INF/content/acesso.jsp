@@ -8,10 +8,10 @@
        
        
         <!-- Start Services Section -->
-        <div class="section service">
+             <!-- Start Portfolio Section -->
+        <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
             <div class="container">
                 <div class="row">
-                    
                       <!-- Start Purchase Section -->
 				        <div class="section purchase">
 				            <div class="container">
@@ -43,6 +43,15 @@
 				        </div>
 				        <!-- End Purchase Section -->
                     
+                              </div><!-- .row -->
+            </div><!-- .container -->
+        </div>
+        <!-- End Services Section -->
+                    
+                            <div class="section service">
+                    
+                    
+                    
                     <!-- Start Big Heading -->
 	                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
 	                    <h1>Como <strong>funciona ?</strong></h1>
@@ -53,7 +62,7 @@
                     <!-- Start Service Icon 1 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
                         <div class="service-icon">
-                            <i class="fa fa-leaf icon-large"></i>
+                            <i class="fa fa-download icon-large"></i>
                         </div>
                         <div class="service-content">
                             <h4>Download do aplicativo</h4>
@@ -66,7 +75,7 @@
                     <!-- Start Service Icon 2 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
                         <div class="service-icon">
-                            <i class="fa fa-desktop icon-large"></i>
+                            <i class="fa fa-user icon-large"></i>
                         </div>
                         <div class="service-content">
                             <h4>Acesso</h4>
@@ -78,10 +87,10 @@
                     <!-- Start Service Icon 3 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
                         <div class="service-icon">
-                            <i class="fa fa-eye icon-large"></i>
+                            <i class="fa fa-bars icon-large"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Participação</h4>
+                            <h4>Campanhas</h4>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
                         </div>
                     </div>
@@ -90,7 +99,7 @@
                     <!-- Start Service Icon 4 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
                         <div class="service-icon">
-                            <i class="fa fa-code icon-large"></i>
+                            <i class="fa fa-cutlery icon-large"></i>
                         </div>
                         <div class="service-content">
                             <h4>Consumo</h4>
@@ -102,10 +111,10 @@
                     <!-- Start Service Icon 5 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="05">
                         <div class="service-icon">
-                            <i class="fa fa-rocket icon-large"></i>
+                            <i class="fa fa-th icon-large"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Coleção</h4>
+                            <h4>Colecione</h4>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
                         </div>
                     </div>
@@ -114,7 +123,7 @@
                     <!-- Start Service Icon 6 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="06">
                         <div class="service-icon">
-                            <i class="fa fa-css3 icon-large"></i>
+                            <i class="fa fa-ticket icon-large"></i>
                         </div>
                         <div class="service-content">
                             <h4>Cupom</h4>
@@ -126,7 +135,7 @@
                     <!-- Start Service Icon 7 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="07">
                         <div class="service-icon">
-                            <i class="fa fa-download icon-large"></i>
+                            <i class="fa fa-gift icon-large"></i>
                         </div>
                         <div class="service-content">
                             <h4>Resgate</h4>
@@ -138,7 +147,7 @@
                     <!-- Start Service Icon 8 -->
                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="08">
                         <div class="service-icon">
-                            <i class="fa fa-umbrella icon-large"></i>
+                            <i class="fa fa-graduation-cap icon-large"></i>
                         </div>
                         <div class="service-content">
                             <h4>Nível</h4>
@@ -147,10 +156,7 @@
                     </div>
                     <!-- End Service Icon 8 -->
 
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div>
-        <!-- End Services Section -->
+      </div>
         
         
         
