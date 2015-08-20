@@ -67,7 +67,10 @@
                                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
                                     <input type="text" value="" name="usuario" id="email" placeholder="Email">
                                     <input type="password" value="" name="senha" id="senha" placeholder="Senha">
-                                    <a href="#" class="main-button">Entrar</a> 
+                                    <center>
+                                    	<a href="#" class="main-button">Entrar</a>
+                                    	<a href="#" class="main-button">Senha</a>
+                                   	</center> 
                                 </form>
                             </div>
                         </div>
