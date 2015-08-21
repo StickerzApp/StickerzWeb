@@ -14,6 +14,12 @@
             	<div class="row">
                    	<a href="#" class="main-button green">Quero me cadastrar</a>
             	</div>
+				<s:if test="hasActionErrors()">
+            		<script>
+					   $('#myModal').modal('show');
+            		</script>
+				</s:if>
+            	
 <!--                       Start Purchase Section -->
                 <div class="row">
 				        <div class="section purchase">

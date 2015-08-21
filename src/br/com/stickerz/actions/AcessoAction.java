@@ -29,20 +29,22 @@ public class AcessoAction extends BaseAction implements ModelDriven<LoginVo> {
 
 	@Action(value ="login", results={
 			@Result(name=SUCCESS, type="redirectAction", params={"actionName", "abrirPortal"})	,
+			@Result(name=ERROR, location="acesso.jsp"),
 			@Result(name="TROCA_SENHA",location="trocaSenha.jsp")})
 	public String login(){
 		try {
 			SessaoUsuario sessaoUsuario = getAcessoService().login(getModel());
 			createUserSession(sessaoUsuario);
 
+			//TODO Criar mecanismo para trocar senha
 //			if(sessaoUsuario.isTrocaSenha()){
 //				return "TROCA_SENHA";
 //			}
 			return SUCCESS;
 		} catch (LogicServiceException e) {
 			addActionError( getText(e.getMessage()) );
+			return ERROR;
 		}
-		return SUCCESS;
 	}
 	
 	@Action(value="logoff", results=@Result(name=SUCCESS, type="redirectAction", params={"actionName", "index"}))

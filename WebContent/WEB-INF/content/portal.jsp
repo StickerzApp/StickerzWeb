@@ -59,7 +59,6 @@
                             </div>
                         </div>
                         <!-- End Memebr 1 -->
-
             </div><!--.row -->
         </div><!--.container-->
         </div>
