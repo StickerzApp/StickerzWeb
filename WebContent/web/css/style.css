@@ -182,11 +182,6 @@ a.main-button, input[type="submit"] {
     margin-bottom: 4px;
 }
 
-a.main-button:hover, input[type="submit"]:hover {
-	background: #444;
-	color: #fff;
-}
-
 a.main-button i {
 	font-size: 1.2em;
 }
@@ -714,7 +709,7 @@ ul.social-list li:last-child a i {
     margin-top: 0;
 }
 
-.search-side {
+.login-side {
 	position: relative;
 	float: right;
 	top: 19px;
@@ -725,13 +720,13 @@ ul.social-list li:last-child a i {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.show-search {
+.show-login {
 	position: relative;
 	display: block;
 	float: right;
 }
 
-.show-search i {
+.show-login i {
 	font-size: 1.2em !important;
 	display: block;
 	color: #666;
@@ -750,22 +745,21 @@ ul.social-list li:last-child a i {
     -o-transition: all 0.2s ease-in-out;
 }
 
-.show-search:hover i {
+.show-login:hover i {
 	color: #666;
 }
 
-.navbar .search-form {
+.navbar .login-form {
 	position: absolute;
 	right: 0;
 	z-index: 20;
 	float: right;
 	display: none;
 	top: 40px;
-	padding: 10px 10px 10px 10px;
-	
+	text-align: center;
 }
 
-.navbar .search-form:before {
+.navbar .login-form:before {
 	background-color: #ccc;
 	top: -2px;
 	content: '';
@@ -782,7 +776,7 @@ ul.social-list li:last-child a i {
 	position: absolute;
 }
 
-.navbar .search-form form input {
+.navbar .login-form form input {
 	border: 1px solid #ccc;
 	padding: 5px 14px;
 	z-index: 22;
@@ -796,13 +790,14 @@ ul.social-list li:last-child a i {
 	margin: 10px 10px;
 }
 
-.navbar .search-form form {
+.navbar .login-form form {
 	position: absolute;
 	right: 0;
 	top: 0;
 	z-index: 20;
 	border: 1px solid #ddd;
 	background-color: white;
+	padding: 20px 20px 20px 20px;
 }
 
 
@@ -1083,9 +1078,19 @@ label .required {
 	margin-left: 2px;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset!important;
+}
+
 input[type="submit"] {
     outline: none;
 }
+
+input[type="checkbox"] {
+    margin: 1px!important;
+    vertical-align: middle;
+}
+
 
 .widget-search input[type="search"],
 #contact-form input[type="text"],

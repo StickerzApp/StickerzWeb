@@ -5,42 +5,27 @@ import java.io.Serializable;
 public class SessaoUsuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private Integer codigoUsuario;
-	private String nomeUsuario;
-	private String email;
-	private boolean trocaSenha;
+	private Integer idUsuario;
+	private String descNome;
+	private String descEmail;
 	
-	
-	public Integer getCodigoUsuario() {
-		return codigoUsuario;
+	public Integer getIdUsuario() {
+		return idUsuario;
 	}
-	
-	public void setCodigoUsuario(Integer codigoUsuario) {
-		this.codigoUsuario = codigoUsuario;
+	public void setIdUsuario(Integer idUsuario) {
+		this.idUsuario = idUsuario;
 	}
-	
-	public String getNomeUsuario() {
-		return nomeUsuario;
+	public String getDescNome() {
+		return descNome;
 	}
-	
-	public void setNomeUsuario(String nomeUsuario) {
-		this.nomeUsuario = nomeUsuario;
+	public void setDescNome(String descNome) {
+		this.descNome = descNome;
 	}
-	
-	public String getEmail() {
-		return email;
+	public String getDescEmail() {
+		return descEmail;
 	}
-	
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
-	public boolean isTrocaSenha() {
-		return trocaSenha;
-	}
-	
-	public void setTrocaSenha(boolean trocaSenha) {
-		this.trocaSenha = trocaSenha;
+	public void setDescEmail(String descEmail) {
+		this.descEmail = descEmail;
 	}
 	
 	

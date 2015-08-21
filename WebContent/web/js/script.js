@@ -87,12 +87,12 @@ $(document).ready(function ($) {
 	$(".nav > li.drop > ul").addClass("dropdown");
 	$(".nav > li.drop > ul.dropdown ul").addClass("sup-dropdown");
 	
-	$('.show-search').click(function() {
-		$('.search-form').fadeIn(300);
-		$('.search-form #usuario').focus();
+	$('.show-login').click(function() {
+		$('.login-form').fadeIn(300);
+		$('.login-form #usuario').focus();
 	});
-	$('.search-form #senha').blur(function() {
-		$('.search-form').fadeOut(300);
+	$('.login-form #senha').blur(function() {
+		$('.login-form').fadeOut(300);
 	});
 	
 	
@@ -520,7 +520,7 @@ $(document).ready(function ($) {
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })
 				}else{
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 20 + "px", 'padding-bottom' : 20 + "px" })
-					$('.search-side').css({ 'margin-top' : -7 + "px" });
+					$('.login-side').css({ 'margin-top' : -7 + "px" });
 				};
 				
 			}
@@ -533,7 +533,7 @@ $(document).ready(function ($) {
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })
 				}else{
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 28 + "px", 'padding-bottom' : 28 + "px" })
-					$('.search-side').css({ 'margin-top' : 0  + "px" });
+					$('.login-side').css({ 'margin-top' : 0  + "px" });
 				};
 				
 			}

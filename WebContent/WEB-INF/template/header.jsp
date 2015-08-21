@@ -55,27 +55,42 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <!-- End Toggle Nav Link For Mobiles -->
-                        <a class="navbar-brand" href="index.html">
-<!--                             <img alt="" src="web/images/margo.png"> -->
+                        <a class="navbar-brand" href="index">
+                            <img alt="" src="web/images/margo.png">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
-                        <!-- Stat login form -->
-                        <div class="search-side">
-                            <a href="#" class="show-search"><i class="fa fa-user"></i></a>
-                            <div class="search-form">
-                                <form autocomplete="off" role="search" method="get" class="searchform" action="#">
-                                    <input type="text" value="" name="usuario" id="email" placeholder="Email">
-                                    <input type="password" value="" name="senha" id="senha" placeholder="Senha">
-                                    <center>
-                                    	<a href="#" class="main-button">Entrar</a>
-                                    	<a href="#" class="main-button">Senha</a>
-                                   	</center> 
-                                </form>
-                            </div>
-                        </div>
-                        <!-- End login form -->
-                       
+                    	<c:choose>
+                    		<c:when test="${empty sessaoUsuario}">
+			                        <!-- Start login form -->
+			                        <div class="login-side">
+			                            <a href="#" class="show-login"><i class="fa fa-user"></i></a>
+			                            <div class="login-form">
+			                                <s:form autocomplete="off" role="search" method="post" action="login" id="loginform">
+			                                    <input type="text" value="" name="email" id="email" placeholder="Email">
+			                                    <input type="password" value="" name="senha" id="senha" placeholder="Senha">
+			                                    <br/>
+			                                    <br/>
+			                                   	<input type="checkbox" checked="checked"><span>Lembrar     </span>
+			                                   	<a href="#">Recuperar senha</a>
+			                                   	<br/>
+			                                   	<br/>
+			                                   	<a href="#" class="main-button blue">Facebook</a>
+			                                   	<a href="javascript:document.loginform.submit();"  class="main-button green" >Entrar</a>
+			                                </s:form>
+			                            </div>
+			                        </div>
+			                        <!-- End login form -->
+                    		</c:when>
+                    		<c:otherwise>
+                    			<div class="login-side">
+			                           ${sessaoUsuario.descEmail}  <a href="#" class="show-login"><i class="fa fa-user"></i></a>
+	                            </div>
+                    		</c:otherwise>
+                    			
+                    	</c:choose>
+                    
+                    
                     </div>
                 </div>
             </div>

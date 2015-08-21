@@ -1,3 +1,18 @@
+.green{
+	background-color: #94c523!important;
+}
+
+.green:hover{
+	background-color: #73981b!important;
+}
+
+.blue{
+	background-color: #2955C5!important;
+}
+.blue:hover{
+	background-color: #204197!important;
+}
+
 a {
     color: #94c523;
 }
@@ -28,6 +43,9 @@ a {
 
 a.main-button, input[type="submit"] {
 	background-color: #94c523;
+}
+a.main-button, input[type="submit"] {
+	background-color: #2955C5;
 }
 
 .navbar-default .navbar-nav > li:hover > a,
