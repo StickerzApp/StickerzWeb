@@ -15,7 +15,6 @@
 	<context:component-scan base-package="br.com.stickerz.dao" />
 	<context:component-scan base-package="br.com.stickerz.service" />
 	
-<!--
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="${jdbc.driverClass}" />
 		<property name="jdbcUrl" value="${jdbc.url}" />
@@ -24,6 +23,8 @@
 	</bean> 
 
 	<context:property-placeholder location="/WEB-INF/jdbc.properties"/>
+
+
 
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -37,6 +38,5 @@
 	</bean>
 	
 	<tx:annotation-driven transaction-manager="txManager" />
-	-->
 
 </beans>
