@@ -1,5 +1,5 @@
 $(function() {
-
+	
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -8,7 +8,7 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val();
+            var name = $("input#nome").val();
             var email = $("input#email").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
@@ -63,6 +63,6 @@ $(function() {
 
 
 /*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
+$('#nome').focus(function() {
     $('#success').html('');
 });

@@ -1,24 +1,19 @@
 package br.com.stickerz.vo;
 
 
-public class LoginVo {
+public class CadastroVo {
 
+	String nome;
 	String email;
 	String senha;
 	
 	
-	public LoginVo(String email, String senha) {
-		super();
-		this.email = email;
-		this.senha = senha;
+	public String getNome() {
+		return nome;
 	}
-	
-	
-	
-	public LoginVo() {
-		super();
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-
 	public String getEmail() {
 		return email;
 	}
