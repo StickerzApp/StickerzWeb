@@ -20,7 +20,7 @@
                                 <!-- Memebr Photo, Name & Position -->
                                 <div class="member-photo">
                                     <img alt="" src="web/images/team/face_5.png" />
-                                    <div class="member-name">David Alvarenga<span>Brasília - DF</span>
+                                    <div class="member-name">${sessaoUsuario.descNome}<span>Brasília - DF</span>
                                     </div>
                                 </div>
                                 <!-- Memebr Words -->

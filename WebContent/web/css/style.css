@@ -46,7 +46,6 @@ body {
     line-height: 21px;
 	font-weight: 300;
 	color: #666;
-	background: url(../images/patterns/1.png) fixed repeat;
 }
 strong, b {
 	font-weight: 600;
@@ -136,6 +135,29 @@ p strong {
 
 .accent-color-bg {
 	color: #fff;
+}
+
+
+.controls{
+	position: relative;
+}
+
+.erroIcon{
+	position: absolute;
+	top: 10px;
+	left: 75%;
+	color: red;
+}
+
+
+.iconErro{
+    top: -35px;
+    left: 20px;
+    margin-right: 6px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    color: red;
 }
 
 .fittext {
@@ -1096,7 +1118,7 @@ input[type="checkbox"] {
 #contact-form input[type="text"],
 #contact-form textarea,
 #respond input[type="text"],
-#respond textarea, .email {
+#respond textarea, .email, .password{
     color: #666fb5;
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
@@ -1106,7 +1128,7 @@ input[type="checkbox"] {
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
     outline: none;
-    width: 100%;
+    width: 80%;
     padding: 7px 14px;
     display: block;
     margin-bottom: 10px;  
@@ -1114,6 +1136,10 @@ input[type="checkbox"] {
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
+}
+
+.password{
+	width: 30%!important;
 }
 
 .widget-search input[type="search"]:focus,

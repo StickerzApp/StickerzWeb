@@ -8,6 +8,7 @@ public class SessaoUsuario implements Serializable {
 	private Integer idUsuario;
 	private String descNome;
 	private String descEmail;
+	private boolean bolTrocaSenha;
 	
 	public Integer getIdUsuario() {
 		return idUsuario;
@@ -26,6 +27,12 @@ public class SessaoUsuario implements Serializable {
 	}
 	public void setDescEmail(String descEmail) {
 		this.descEmail = descEmail;
+	}
+	public boolean isBolTrocaSenha() {
+		return bolTrocaSenha;
+	}
+	public void setBolTrocaSenha(boolean bolTrocaSenha) {
+		this.bolTrocaSenha = bolTrocaSenha;
 	}
 	
 	

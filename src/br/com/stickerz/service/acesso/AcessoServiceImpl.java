@@ -66,6 +66,7 @@ public class AcessoServiceImpl implements AcessoService {
 		sessaoUsuario.setIdUsuario(usuario.getIdUsuario());
 		sessaoUsuario.setDescNome( usuario.getDescNome() );
 		sessaoUsuario.setDescEmail( usuario.getDescEmail() );
+		sessaoUsuario.setBolTrocaSenha(usuario.isBolTrocaSenha());
 		
 //		contaAcesso.setDataUltimoAcesso(new Date());
 //		getContaAcessoDao().update(contaAcesso);

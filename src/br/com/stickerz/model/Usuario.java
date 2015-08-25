@@ -50,6 +50,11 @@ public class Usuario implements Serializable{
 	@Column(nullable = false)
 	private boolean bolAtivo;
 	
+	@Column(nullable = false)
+	private boolean bolTrocaSenha;
+	
+	@Column(nullable = true, length = 10)
+	private String codTrocaSenha;
 	
 	public Usuario() {
 
@@ -145,6 +150,27 @@ public class Usuario implements Serializable{
 		this.bolAtivo = bolAtivo;
 	}
 
+
+	public boolean isBolTrocaSenha() {
+		return bolTrocaSenha;
+	}
+
+
+	public void setBolTrocaSenha(boolean bolTrocaSenha) {
+		this.bolTrocaSenha = bolTrocaSenha;
+	}
+
+
+	public String getCodTrocaSenha() {
+		return codTrocaSenha;
+	}
+
+
+	public void setCodTrocaSenha(String codTrocaSenha) {
+		this.codTrocaSenha = codTrocaSenha;
+	}
+
+	
 	
 	
 	
