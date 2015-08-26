@@ -53,6 +53,24 @@ public class AcessoAction extends BaseAction implements ModelDriven<LoginVo> {
 		return SUCCESS;
 	}
 	
+	@Action(value="recuperacaoSenha", results=@Result(name=SUCCESS, location="recuperarSenha.jsp"))
+	public String recuperacaoSenha() {
+		return SUCCESS;
+	}
+	@Action(value="recuperarSenha", results={@Result(name=SUCCESS, location="recuperarSenha.jsp"),
+			@Result(name=ERROR, location="recuperarSenha.jsp")}
+			)
+	public String recuperarSenha() {
+		try {
+			acessoService.recuperarSenha(model);
+		} catch (Exception e) {
+			addActionError(getText(e.getMessage()));
+			return ERROR;
+		}
+		addActionMessage(getText("contaAcessoService.success.recuperacao_senha_enviada"));
+		return SUCCESS;
+	}
+	
 	
 	private void invalidateUserSession() {
 	    HttpServletRequest request = ServletActionContext.getRequest();

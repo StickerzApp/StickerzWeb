@@ -1,19 +1,14 @@
-var erros = ['O email digitado é inválido','A senha deve conter no mínimo 6 caracteres e no máximo 8','A confirmação de senha deve igual à senha digitada'];
-
 //verifica se o email digitado é válido
 function validaEmail(){
 	var email = $("input#emailCadastro").val();
 	
 	var filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     if(!filtro.test(email)){
-    	setMensagemErrro(0)
-    	$('div#validacao').show();
+    	$('div#dicaemail').show();
     	$('i#erroEmail').show();
-    	$('button#submit').attr('disabled','disabled');
 	}else{
-		$('div#validacao').hide();
+		$('div#dicaemail').hide();
 		$('i#erroEmail').hide();
-		$('button#submit').removeAttr('disabled');
 	}
 }
 
@@ -22,15 +17,13 @@ function validaSenhaCadastro(){
 	var senhaCadastro = $("input#senhaCadastro").val();
 	
 	if(senhaCadastro.length < 6){
-		setMensagemErrro(1)
-		$('div#validacao').show();
+		$('div#dicasenha').show();
 		$('i#erroSenha').show();
-		$('button#submit').attr('disabled','disabled');
 	}else{
-		$('div#validacao').hide();
+		$('div#dicasenha').hide();
 		$('i#erroSenha').hide();
-		$('button#submit').removeAttr('disabled');
 	}
+	validaConfirmacao();
 		
 }
 
@@ -41,20 +34,38 @@ function validaConfirmacao(){
 	var senhaCadastro = $("input#senhaCadastro").val();
 	
 	if(confirmacaoSenhaCadastro != senhaCadastro){
-		setMensagemErrro(2)
-		$('div#validacao').show();
+		$('div#dicaconfirmacao').show();
 		$('i#erroConfirmaSenha').show();
-		$('button#submit').attr('disabled','disabled');
 	}else{
-		$('div#validacao').hide();
+		$('div#dicaconfirmacao').hide();
 		$('i#erroConfirmaSenha').hide();
-		$('button#submit').removeAttr('disabled');
 	}
 	
 }
 
 
-function setMensagemErrro(codigoErro){
-	$('div#validacao').html(erros[codigoErro]);
-	$('div#validacao').show();
-}
+$(document).ready(function () {
+
+	$("#contact-form").submit(function (e) {
+		var email = $("input#emailCadastro").val();
+		var nome = $("input#nomeCadastro").val();
+		var senhaCadastro = $("input#senhaCadastro").val();
+		var confirmacaoSenhaCadastro = $("input#confirmaSenhaCadastro").val();
+		
+    	if($('div#dicaconfirmacao').is(':visible') ||
+    			$('div#dicasenha').is(':visible')  ||
+    			$('div#dicaemail').is(':visible') 
+    			
+    			){
+    			alert('Corrija os campos');
+    			e.preventDefault();
+    	}else if(senhaCadastro == '' || confirmacaoSenhaCadastro == '' || email == ''){
+    		alert('Preencha todos os campos');
+    		e.preventDefault();
+    	}
+    });
+ });
+
+
+
+

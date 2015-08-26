@@ -8,6 +8,7 @@ import br.com.stickerz.model.Usuario;
 import br.com.stickerz.service.AcessoService;
 import br.com.stickerz.service.LogicServiceException;
 import br.com.stickerz.service.SessaoUsuario;
+import br.com.stickerz.utils.Utilitario;
 import br.com.stickerz.vo.LoginVo;
 
 
@@ -73,6 +74,25 @@ public class AcessoServiceImpl implements AcessoService {
 		
 		return sessaoUsuario;
 	}
+	
+	
+	@Override
+	public void recuperarSenha(LoginVo model) throws LogicServiceException {
+		
+		Usuario usuario = usuarioDao.recuperaUsuario(model.getEmail());
+		if(!Utilitario.isVazio(usuario) && usuario.isBolAtivo()){
+			usuario.setBolTrocaSenha(true);
+			usuario.setCodTrocaSenha(Utilitario.gerarSenha(10));
+			
+			usuarioDao.save(usuario);
+			
+			//TODO criar mecaniscmo de envio de email
+//				enviaEmailUsuario("recuperarSenha", usuario.getCodTrocaSenha());
+		}else{
+			throw new LogicServiceException("contaAcessoService.exception.conta_inexistente_ou_inativa");
+		}
+		
+	}
 
 	public UsuarioDao getUsuarioDao() {
 		return usuarioDao;
@@ -81,5 +101,6 @@ public class AcessoServiceImpl implements AcessoService {
 	public void setUsuarioDao(UsuarioDao usuarioDao) {
 		this.usuarioDao = usuarioDao;
 	}
+
 
 }

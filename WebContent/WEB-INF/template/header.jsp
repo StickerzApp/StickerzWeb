@@ -72,7 +72,7 @@
 			                                    <br/>
 			                                    <br/>
 			                                   	<input type="checkbox" checked="checked"><span>Lembrar     </span>
-			                                   	<a href="#">Recuperar senha</a>
+			                                   	<a href="recuperacaoSenha">Recuperar senha</a>
 			                                   	<br/>
 			                                   	<br/>
 			                                   	<a href="#" class="main-button blue">Facebook</a>

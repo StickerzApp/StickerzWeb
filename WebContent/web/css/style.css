@@ -142,23 +142,28 @@ p strong {
 	position: relative;
 }
 
-.erroIcon{
+.erroIcon80{
 	position: absolute;
 	top: 10px;
-	left: 75%;
-	color: red;
+	left: 78%;
+	color: #CC3333;
+}
+.erroIcon30{
+	position: absolute;
+	top: 10px;
+	left: 27%;
+	color: #CC3333;
 }
 
-
-.iconErro{
-    top: -35px;
-    left: 20px;
-    margin-right: 6px;
-    margin-top: -30px;
-    position: relative;
-    z-index: 2;
-    color: red;
+.dicacampo{
+	position: relative;
+	top: -2px;
+	left: 6px;
+	font-weight: 600;
+	font-size: 12px;
+	color: #CC3333;
 }
+
 
 .fittext {
 	font-size: 38px;
@@ -1131,7 +1136,7 @@ input[type="checkbox"] {
     width: 80%;
     padding: 7px 14px;
     display: block;
-    margin-bottom: 10px;  
+    margin-bottom: 2px;  
 	transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
