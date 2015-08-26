@@ -12,8 +12,8 @@ import br.com.stickerz.model.Usuario;
 public class UsuarioDao extends AbstractJpaDao<Usuario> {
 	
 	public Number verificaExistenciaCadastro(String descEmail) {
-		String jpql = "SELECT COUNT(*) FROM Usuario u WHERE u.descEmail = :descEmail";
-		Parameters params = with("descEmail",descEmail).parameters();
+		String jpql = "SELECT COUNT(*) FROM Usuario u WHERE u.descEmail = :descEmail and u.bolAtivo = :bolAtivo";
+		Parameters params = with("descEmail",descEmail).and("bolAtivo", true).parameters();
 		return getWithQuery(jpql, params);
 	}
 

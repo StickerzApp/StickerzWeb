@@ -13,6 +13,9 @@ public interface AcessoService extends ActionService {
 	
 	@Transactional
 	public SessaoUsuario login(LoginVo vo) throws LogicServiceException;
+
+	@Transactional
+	public void recuperarSenha(LoginVo model) throws LogicServiceException;
 	
 //	@Transactional
 //    Pessoa validaLoginSenha(String login, String senha);

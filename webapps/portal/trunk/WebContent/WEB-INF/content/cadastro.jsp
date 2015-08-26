@@ -19,36 +19,40 @@
 						</h4>
 
 						<!-- Start Contact Form -->
-						<s:form role="form" action="cadastrar" class="contact-form" id="contact-form"
+						<s:form role="form" action="cadastrar" class="contact-form" id="contact-form" name="contact-form"
 							method="post">
 							<div class="form-group">
 								<div class="controls">
-									<input type="text" placeholder="Nome" name="nome">
+									<input type="text" placeholder="Nome" name="nome" id="nomeCadastro">
+										<i id="erroNome" class="fa fa-exclamation erroIcon80"  style="display: none;"></i>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="controls">
 									<input type="email" id="emailCadastro" class="email" placeholder="Email"
 										name="email" onkeyup="validaEmail();">
-										<i id="erroEmail" class="fa fa-exclamation-circle erroIcon"  style="display: none;"></i>
+										<i id="erroEmail" class="fa fa-exclamation erroIcon80"  style="display: none;"></i>
 								</div>
+								<div  class="dicacampo" id="dicaemail" style="display: none;">O email informado é inválido</div>
 							</div>
 							<div class="form-group">
 								<div class="controls">
 									<input type="password" class="password" placeholder="Senha"
 										maxlength="8" id="senhaCadastro" name="senha" onkeyup="validaSenhaCadastro();">
-										<i id="erroSenha" class="fa fa-exclamation-circle erroIcon"  style="display: none;"></i>
+										<i id="erroSenha" class="fa fa-exclamation erroIcon30"  style="display: none;"></i>
 								</div>
+								<div  class="dicacampo" id="dicasenha" style="display: none;">A senha deve conter no mínimo 6 caracteres e no máximo 8.</div>
 							</div>
 							<div class="form-group">
 								<div class="controls">
 									<input type="password" class="password" placeholder="Confirme sua senha"
 										name="confirmacaoSenha" id="confirmaSenhaCadastro" maxlength="8" onkeyup="validaConfirmacao();">
-										<i id="erroConfirmaSenha" class="fa fa-exclamation-circle erroIcon"  style="display: none;"></i>
+										<i id="erroConfirmaSenha" class="fa fa-exclamation erroIcon30"  style="display: none;"></i>
 								</div>
+								<div  class="dicacampo" id="dicaconfirmacao" style="display: none;">A confirmação de senha deve igual à senha digitada.</div>
 							</div>
-							<div id="validacao" style="float: right;background-color: #DDAAAA;"></div>
-							<button type="submit" id="submit" class="btn-system btn-large">Cadastrar</button>
+							
+							<button type="submit" id="submit" class="btn-system btn-large" >Cadastrar</button>
 							<div id="success" style="color: #34495e;"></div>
 						</s:form>
 						<!-- End Contact Form -->
