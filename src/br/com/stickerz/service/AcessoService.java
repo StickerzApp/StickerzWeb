@@ -2,6 +2,7 @@ package br.com.stickerz.service;
 
 import org.springframework.transaction.annotation.Transactional;
 
+import br.com.stickerz.model.Usuario;
 import br.com.stickerz.vo.LoginVo;
 
 
@@ -16,6 +17,12 @@ public interface AcessoService extends ActionService {
 
 	@Transactional
 	public void recuperarSenha(LoginVo model) throws LogicServiceException;
+
+	@Transactional
+	public Usuario buscarUsuarioSenhaAlteracao(LoginVo usuarioVo) throws LogicServiceException;
+
+	@Transactional
+	public void alterarSenhaRecuperacao(LoginVo usuarioVo) throws LogicServiceException;
 	
 //	@Transactional
 //    Pessoa validaLoginSenha(String login, String senha);

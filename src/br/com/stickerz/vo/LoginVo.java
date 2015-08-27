@@ -5,6 +5,7 @@ public class LoginVo {
 
 	String email;
 	String senha;
+	private String codigoAlteracaoSenha;
 	
 	
 	public LoginVo(String email, String senha) {
@@ -30,6 +31,18 @@ public class LoginVo {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+
+
+	public String getCodigoAlteracaoSenha() {
+		return codigoAlteracaoSenha;
+	}
+
+
+
+	public void setCodigoAlteracaoSenha(String codigoAlteracaoSenha) {
+		this.codigoAlteracaoSenha = codigoAlteracaoSenha;
 	}
 
 	

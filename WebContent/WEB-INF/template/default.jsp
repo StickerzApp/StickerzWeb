@@ -76,16 +76,16 @@
 	</head>
 	
 	<body>
-	  <!-- Modal -->
-	  <div class="modal fade" id="myModal" role="dialog">
+	  <!-- Modal info -->
+	  <div class="modal fade" id="modalinfo" role="dialog">
 	    <div class="modal-dialog modal-lg">
 	      <div class="modal-content">
 	        <div class="modal-header">
 	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title">O que aconteceu ?</h4>
+	          <h4 class="modal-title">Então...</h4>
 	        </div>
 	        <div class="modal-body">
-	          <p>Você esqueceu seus dados de acesso ou não tem cadastro ?.</p>
+	          <p><s:actionmessage/></p>
 	        </div>
 	        <div class="modal-footer">
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -93,6 +93,30 @@
 	      </div>
 	    </div>
 	  </div>
+	  
+	  <div class="modal fade" id="modalerro" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Algo deu errado !</h4>
+	        </div>
+	        <div class="modal-body">
+	          <p><s:actionerror/></p>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  
+	  
+	  
+	  
+	          
+	          
+	          
 		<div id="container">
 			<t:insertAttribute name="header" />
 			<t:insertAttribute name="middle"/>
