@@ -29,5 +29,11 @@ public class UsuarioDao extends AbstractJpaDao<Usuario> {
 		Parameters params = with("descEmail", login).parameters();
 		return getWithQuery(jpql, params);
 	}
+
+	public Usuario buscarUsuarioSenhaAlteracao(String emailAlteracaoSenha, String codigoAlteracaoSenha) {
+		String jpql = "FROM Usuario u WHERE u.descEmail = :emailAlteracaoSenha AND u.codTrocaSenha = :codTrocaSenha AND u.bolAtivo = :bolAtivo";
+		Parameters params = with("emailAlteracaoSenha", emailAlteracaoSenha).and("codTrocaSenha",codigoAlteracaoSenha).and("bolAtivo", true).parameters();
+		return getWithQuery(jpql, params);
+	}
 	
 }

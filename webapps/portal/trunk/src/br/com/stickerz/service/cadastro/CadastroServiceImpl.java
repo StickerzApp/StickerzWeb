@@ -41,7 +41,7 @@ public class CadastroServiceImpl implements CadastroService {
 			getUsuarioDao().save(usuario);
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new LogicServiceException("cadastroService.exception.conta_existente");
+			throw new LogicServiceException("cadastro.erro.contaexistente");
 		}
 		
 		return usuario;

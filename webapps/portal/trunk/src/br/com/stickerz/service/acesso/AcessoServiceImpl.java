@@ -22,55 +22,27 @@ public class AcessoServiceImpl implements AcessoService {
 		Usuario usuario = getUsuarioDao().recuperaUsuario(vo.getEmail());
 
 		if (usuario == null){
-			throw new LogicServiceException("contaAcessoService.exception.conta_inexistente");
+			throw new LogicServiceException("acesso.login.erro.containexistente");
 		}
 
 		if (!usuario.getDescHashSenha().equals( vo.getSenha() )) {
-			throw new LogicServiceException("contaAcessoService.exception.senha_invalida");
+			throw new LogicServiceException("acesso.login.erro.senhainvalida");
 		}
 		
 		if (!usuario.isBolAtivo()) {
-			throw new LogicServiceException("contaAcessoService.exception.conta_inativa");
+			throw new LogicServiceException("acesso.login.erro.containativa");
+		}
+		
+		if (usuario.isBolTrocaSenha()) {
+			throw new LogicServiceException("acesso.login.erro.alteracaosenhapendente");
 		}
 		
 		SessaoUsuario sessaoUsuario = new SessaoUsuario();
-		
-//		Pessoa pessoa = contaAcesso.getPessoa();
-//		if (pessoa != null) {
-//			
-//			ContratoCondominio contratoCondominio = getContratoCondominioDao().getContratoVigente( pessoa.getIdCondominio() );
-//			
-//			if(contratoCondominio == null){
-//				throw new LogicServiceException("contaAcessoService.exception.contrato_inexistente");
-//			}
-//			
-//			if (contratoCondominio.isBolSuspenso()) {
-//				throw new LogicServiceException("contaAcessoService.exception.contrato_suspenso");
-//			}
-//			
-//			if(pessoa.getIdUnidade() != null){
-//				List<PendenciaUnidade> pendencias = getPendenciaUnidadeDao().getPendenciasImpeditivas(pessoa.getIdUnidade());
-//				if (pendencias.size() > 0) {
-//					throw new UnidadeComPendenciaException(pendencias);
-//				}
-//			}
-//			
-//			sessaoUsuario.setIdCondominio( pessoa.getIdCondominio() );
-//			if(pessoa.getIdUnidade() != null){
-//				sessaoUsuario.setIdUnidade( pessoa.getIdUnidade() );
-//			}
-//			sessaoUsuario.setIdPessoa( pessoa.getIdPessoa() );
-//			sessaoUsuario.setNomePessoa( pessoa.getNomePessoa() );
-//			sessaoUsuario.setBolConfigurado( pessoa.getCondominio().isBolConfigurado() );
-//		}
 		
 		sessaoUsuario.setIdUsuario(usuario.getIdUsuario());
 		sessaoUsuario.setDescNome( usuario.getDescNome() );
 		sessaoUsuario.setDescEmail( usuario.getDescEmail() );
 		sessaoUsuario.setBolTrocaSenha(usuario.isBolTrocaSenha());
-		
-//		contaAcesso.setDataUltimoAcesso(new Date());
-//		getContaAcessoDao().update(contaAcesso);
 		
 		return sessaoUsuario;
 	}
@@ -81,15 +53,13 @@ public class AcessoServiceImpl implements AcessoService {
 		
 		Usuario usuario = usuarioDao.recuperaUsuario(model.getEmail());
 		if(!Utilitario.isVazio(usuario) && usuario.isBolAtivo()){
-			usuario.setBolTrocaSenha(true);
 			usuario.setCodTrocaSenha(Utilitario.gerarSenha(10));
-			
 			usuarioDao.save(usuario);
 			
 			//TODO criar mecaniscmo de envio de email
-//				enviaEmailUsuario("recuperarSenha", usuario.getCodTrocaSenha());
+			//enviaEmailUsuario("recuperarSenha", usuario.getCodTrocaSenha());
 		}else{
-			throw new LogicServiceException("contaAcessoService.exception.conta_inexistente_ou_inativa");
+			throw new LogicServiceException("acesso.recuperacaosenha.erro.usuarionaoencontrado");
 		}
 		
 	}
@@ -103,4 +73,29 @@ public class AcessoServiceImpl implements AcessoService {
 	}
 
 
+	@Override
+	public Usuario buscarUsuarioSenhaAlteracao(LoginVo usuarioVo) throws LogicServiceException {
+		Usuario usuario = usuarioDao.buscarUsuarioSenhaAlteracao(usuarioVo.getEmail(),usuarioVo.getCodigoAlteracaoSenha());
+		if(usuario != null){
+			usuario.setBolTrocaSenha(true);
+			usuarioDao.update(usuario);
+			return usuario;
+		}else{
+			throw new LogicServiceException("acesso.recuperacaosenha.erro.emailoucodigoincorreto");
+		}
+	}
+
+
+	@Override
+	public void alterarSenhaRecuperacao(LoginVo usuarioVo) throws LogicServiceException {
+		try {
+			Usuario usuario = usuarioDao.buscarUsuarioSenhaAlteracao(usuarioVo.getEmail(),usuarioVo.getCodigoAlteracaoSenha());
+			usuario.setBolTrocaSenha(false);
+			usuario.setDescHashSenha(usuarioVo.getSenha());
+			usuario.setCodTrocaSenha(null);
+			usuarioDao.update(usuario);
+		} catch (Exception e) {
+			throw new LogicServiceException("acesso.alteracaosenha.erro.erronaalteracaosenha");
+		}
+	}
 }

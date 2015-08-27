@@ -6,6 +6,18 @@
 <!-- Start Header Section --> 
         <div class="hidden-header"></div>
         <header class="clearfix">
+        	<s:if test="hasActionErrors()">
+           		<script>
+				   $('#modalerro').modal('show');
+           		</script>
+			</s:if>
+        	<s:if test="hasActionMessages()">
+           		<script>
+				   $('#modalinfo').modal('show');
+           		</script>
+			</s:if>
+			
+			
             
             <!-- Start Top Bar -->
             <div class="top-bar">
