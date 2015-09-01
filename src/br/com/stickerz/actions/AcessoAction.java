@@ -9,17 +9,13 @@ import javax.servlet.http.HttpSession;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
-import org.apache.struts2.interceptor.RequestAware;
 
-import br.com.stickerz.model.Usuario;
+import com.opensymphony.xwork2.ModelDriven;
+
 import br.com.stickerz.service.AcessoService;
 import br.com.stickerz.service.LogicServiceException;
 import br.com.stickerz.service.SessaoUsuario;
-import br.com.stickerz.utils.Utilitario;
 import br.com.stickerz.vo.LoginVo;
-
-import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ModelDriven;
 
 
 public class AcessoAction extends BaseAction implements ModelDriven<LoginVo> {

@@ -1,17 +1,13 @@
 package br.com.stickerz.model;
 
-import static javax.persistence.GenerationType.IDENTITY;
-
 import java.io.Serializable;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 
 @Entity
@@ -19,33 +15,23 @@ import javax.persistence.TemporalType;
 public class Usuario implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	@Id
-    @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "idUsuario", unique = true, nullable = false)
-	private int idUsuario;
 	
-	@Column(nullable = false, length = 200 , unique=true)
-	private String descEmail;
+	@Id
+	@Column(name = "IdPessoa", nullable = false)
+	private int idPessoa;
+
+	@OneToOne
+    @JoinColumn(name = "IdPessoa") 
+	private Pessoa pessoa;
+	
+	@Column(nullable = false, length = 200)
+	private String descUsuarioConta;
 	
 	@Column(nullable = false, length = 64)
 	private String descHashSenha;
 	
 	@Column(nullable = false, length = 32)
 	private String descChaveAutenticacao;
-	
-	@Column(nullable = false, length = 150)
-	private String descNome;
-	
-	@Column(nullable = true, length = 11 , unique=true)
-	private String numCpf;
-	
-	@Temporal(TemporalType.DATE)
-	@Column(nullable = true)
-	private Date dataNascimento;
-	
-	@Temporal(TemporalType.DATE)
-	@Column(nullable = false)
-	private Date dataHoraCadastro;
 	
 	@Column(nullable = false)
 	private boolean bolAtivo;
@@ -56,122 +42,87 @@ public class Usuario implements Serializable{
 	@Column(nullable = true, length = 10)
 	private String codTrocaSenha;
 	
+	public Usuario(Pessoa pessoa) {
+		if (pessoa == null) {
+			throw new IllegalArgumentException("Argumento 'pessoa' está nulo.");
+		}
+		
+		this.pessoa = pessoa;
+		this.pessoa.setUsuario(this);
+		
+		this.idPessoa = pessoa.getIdPessoa();
+		
+	}
+	
+
 	public Usuario() {
-
+		super();
 	}
 
 
-	public int getIdUsuario() {
-		return idUsuario;
+
+	public int getIdPessoa() {
+		return idPessoa;
 	}
 
-
-	public void setIdUsuario(int idUsuario) {
-		this.idUsuario = idUsuario;
+	public void setIdPessoa(int idPessoa) {
+		this.idPessoa = idPessoa;
 	}
 
-
-	public String getDescEmail() {
-		return descEmail;
+	public Pessoa getPessoa() {
+		return pessoa;
 	}
 
-
-	public void setDescEmail(String descEmail) {
-		this.descEmail = descEmail;
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
 	}
-
 
 	public String getDescHashSenha() {
 		return descHashSenha;
 	}
 
-
 	public void setDescHashSenha(String descHashSenha) {
 		this.descHashSenha = descHashSenha;
 	}
-
 
 	public String getDescChaveAutenticacao() {
 		return descChaveAutenticacao;
 	}
 
-
 	public void setDescChaveAutenticacao(String descChaveAutenticacao) {
 		this.descChaveAutenticacao = descChaveAutenticacao;
 	}
-
-
-	public String getDescNome() {
-		return descNome;
-	}
-
-
-	public void setDescNome(String descNome) {
-		this.descNome = descNome;
-	}
-
-
-	public String getNumCpf() {
-		return numCpf;
-	}
-
-
-	public void setNumCpf(String numCpf) {
-		this.numCpf = numCpf;
-	}
-
-
-	public Date getDataNascimento() {
-		return dataNascimento;
-	}
-
-
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-
-
-	public Date getDataHoraCadastro() {
-		return dataHoraCadastro;
-	}
-
-
-	public void setDataHoraCadastro(Date dataHoraCadastro) {
-		this.dataHoraCadastro = dataHoraCadastro;
-	}
-
 
 	public boolean isBolAtivo() {
 		return bolAtivo;
 	}
 
-
 	public void setBolAtivo(boolean bolAtivo) {
 		this.bolAtivo = bolAtivo;
 	}
-
 
 	public boolean isBolTrocaSenha() {
 		return bolTrocaSenha;
 	}
 
-
 	public void setBolTrocaSenha(boolean bolTrocaSenha) {
 		this.bolTrocaSenha = bolTrocaSenha;
 	}
-
 
 	public String getCodTrocaSenha() {
 		return codTrocaSenha;
 	}
 
-
 	public void setCodTrocaSenha(String codTrocaSenha) {
 		this.codTrocaSenha = codTrocaSenha;
 	}
 
-	
-	
-	
-	
+	public String getDescUsuarioConta() {
+		return descUsuarioConta;
+	}
+
+	public void setDescUsuarioConta(String descUsuarioConta) {
+		this.descUsuarioConta = descUsuarioConta;
+	}
+
 }

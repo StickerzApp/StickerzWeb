@@ -10,6 +10,7 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 		<class>br.com.stickerz.model.Usuario</class>
+		<class>br.com.stickerz.model.Pessoa</class>
 
 		<exclude-unlisted-classes/>
 

@@ -25,7 +25,7 @@ public class UsuarioDao extends AbstractJpaDao<Usuario> {
 	
 	
 	public Usuario recuperaUsuario(String login){
-		String jpql = "FROM Usuario u WHERE u.descEmail = :descEmail ";
+		String jpql = "FROM Usuario u WHERE u.descUsuarioConta = :descEmail ";
 		Parameters params = with("descEmail", login).parameters();
 		return getWithQuery(jpql, params);
 	}
