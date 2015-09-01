@@ -23,15 +23,7 @@
             <div class="top-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-1">
-                            <!-- Start Social Links -->
-                            <ul class="social-list" >
-                                <li>
-                                    <a class="google itl-tooltip" data-placement="bottom" title="Algum problema ?" href="#"><i class="fa fa-life-bouy"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-11">
+                        <div class="col-md-12">
                             <!-- Start Social Links -->
                             <ul class="social-list">
                                 <li>
@@ -48,6 +40,13 @@
                                 </li>
                                 <li>
                                     <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-youtube"></i></a>
+                                </li>
+	                            <!-- Help Links -->
+                                <li>
+                                    <a data-placement="bottom" href="#"><i> </i></a>
+                                </li>
+                                <li>
+                                    <a class="google itl-tooltip" data-placement="bottom" title="Ajuda" href="#"><i class="fa fa-life-bouy"></i></a>
                                 </li>
                             </ul>
                             <!-- End Social Links -->

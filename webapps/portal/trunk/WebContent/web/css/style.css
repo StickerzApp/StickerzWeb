@@ -199,14 +199,14 @@ a.main-button, input[type="submit"] {
     color: #fff;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-weight: 600; 
     padding: 6px 16px;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     margin-bottom: 4px;
+    margin-right: 4px;
 }
 
 a.main-button i {

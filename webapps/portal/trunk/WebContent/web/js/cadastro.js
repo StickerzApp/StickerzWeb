@@ -60,7 +60,7 @@ $(document).ready(function () {
     			alert('Corrija os campos');
     			e.preventDefault();
     	}else if(senhaCadastro == '' || confirmacaoSenhaCadastro == '' || email == ''){
-    		alert('Preencha todos os campos');
+			$('#modalerro').modal('show');
     		e.preventDefault();
     	}
     });
