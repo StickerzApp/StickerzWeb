@@ -88,15 +88,26 @@ $(document).ready(function ($) {
 	$(".nav > li.drop > ul.dropdown ul").addClass("sup-dropdown");
 	
 	$('.show-login').click(function() {
-		$('.login-form').fadeIn(300);
+		$('.login-form').fadeIn(500);
 		$('.login-form #usuario').focus();
 	});
-	$('.login-form #senha').blur(function() {
-		$('.login-form').fadeOut(300);
-	});
 	
 	
-	
+	 var mouse_is_inside = false;
+
+	 $(document).ready(function()
+	 {
+	     $('.login-form').hover(function(){ 
+	         mouse_is_inside=true; 
+	     }, function(){ 
+	         mouse_is_inside=false; 
+	     });
+
+	     $("body").mouseup(function(){ 
+	         if(! mouse_is_inside) $('.login-form').fadeOut(500);
+	     });
+	 });
+	 
 	
 	
 	/*----------------------------------------------------*/
