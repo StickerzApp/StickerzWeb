@@ -23,7 +23,7 @@
 							method="post" >
 							<div class="form-group">
 								<div class="controls">
-									<input type="email" id="emailCadastro" class="email" placeholder="Digite seu email"C:/Users/david.alvarenga/Desktop/stickerz.png""
+									<input type="email" id="emailCadastro" class="email" placeholder="Digite seu email"
 										name="email" onkeyup="validaEmail();">
 										<i id="erroEmail" class="fa fa-exclamation erroIcon80"  style="display: none;"></i>
 								</div>

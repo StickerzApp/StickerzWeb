@@ -35,6 +35,7 @@ public class CadastroAction extends BaseAction implements ModelDriven<CadastroVo
 			acessoService.login(new LoginVo(getModel().getEmail(),getModel().getSenha()));
 		} catch (Exception e) {
 			addActionError( getText(e.getMessage()) );
+			e.printStackTrace();
 			return ERROR;
 		}
 		return SUCCESS;

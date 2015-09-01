@@ -39,9 +39,9 @@ public class AcessoServiceImpl implements AcessoService {
 		
 		SessaoUsuario sessaoUsuario = new SessaoUsuario();
 		
-		sessaoUsuario.setIdUsuario(usuario.getIdUsuario());
-		sessaoUsuario.setDescNome( usuario.getDescNome() );
-		sessaoUsuario.setDescEmail( usuario.getDescEmail() );
+		sessaoUsuario.setIdUsuario(usuario.getIdPessoa());
+		sessaoUsuario.setDescNome( usuario.getPessoa().getDescNome());
+		sessaoUsuario.setDescEmail( usuario.getPessoa().getDescEmail() );
 		sessaoUsuario.setBolTrocaSenha(usuario.isBolTrocaSenha());
 		
 		return sessaoUsuario;
