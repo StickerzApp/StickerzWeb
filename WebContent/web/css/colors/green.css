@@ -7,10 +7,14 @@
 }
 
 .blue{
-	background-color: #2955C5!important;
+	background-color: #204197!important;
 }
 .blue:hover{
-	background-color: #204197!important;
+	background-color: #103086!important;
+}
+
+.negrito{
+	font-weight: 600;
 }
 
 a {

@@ -88,7 +88,7 @@
 	          <p><s:actionmessage/></p>
 	        </div>
 	        <div class="modal-footer">
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
 	        </div>
 	      </div>
 	    </div>
@@ -105,15 +105,11 @@
 	          <p><s:actionerror/></p>
 	        </div>
 	        <div class="modal-footer">
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
 	        </div>
 	      </div>
 	    </div>
 	  </div>
-	  
-	  
-	  
-	  
 	          
 	          
 	          
