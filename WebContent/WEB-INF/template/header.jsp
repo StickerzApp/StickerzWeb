@@ -70,6 +70,7 @@
                             <img alt="" src="web/images/margo.png">
                         </a>
                     </div>
+                    
                     <div class="navbar-collapse collapse">
                     	<c:choose>
                     		<c:when test="${empty sessaoUsuario}">
@@ -78,10 +79,18 @@
 			                            <a href="#" class="show-login"><i class="fa fa-user"></i></a>
 			                            <div class="login-form">
 			                                <s:form autocomplete="off" role="search" method="post" action="login" id="loginform">
-			                                    <input type="text" value="" name="email" id="email" placeholder="Email">
-			                                    <input type="password" value="" name="senha" id="senha" placeholder="Senha">
+			                                	<div class="controls">
+				                                    <input type="text" value="" name="email" id="email" placeholder="Email">
+				                                    <i id="emailIcon" class="fa fa-user inputIcon"></i>
+			                                	</div>
+			                                	<div class="controls">
+				                                    <input type="password" value="" name="senha" id="senha" placeholder="Senha">
+				                                    <i id="passIcon" class="fa fa-key inputIcon"></i>
+			                                	</div>
 			                                    <br/>
 			                                    <br/>
+			                                    
+			                                    
 			                                   	<input type="checkbox" checked="checked"><span>Lembrar     </span>
 			                                   	<a href="recuperacaoSenha">Recuperar senha</a>
 			                                   	<br/>
