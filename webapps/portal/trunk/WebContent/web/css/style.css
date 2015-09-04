@@ -142,6 +142,12 @@ p strong {
 	position: relative;
 }
 
+.inputIcon{
+	position: absolute;
+	top: 20px;
+	left: 9%;
+	color: #CCC;
+}
 .erroIcon80{
 	position: absolute;
 	top: 10px;
@@ -805,7 +811,7 @@ ul.social-list li:last-child a i {
 
 .navbar .login-form form input {
 	border: 1px solid #ccc;
-	padding: 5px 14px;
+	padding: 5px 25px;
 	z-index: 22;
 	color: #9d9d9d;
 	box-shadow: none;
@@ -1117,7 +1123,6 @@ input[type="checkbox"] {
     margin: 1px!important;
     vertical-align: middle;
 }
-
 
 .widget-search input[type="search"],
 #contact-form input[type="text"],

@@ -11,6 +11,7 @@
 
 		<class>br.com.stickerz.model.Usuario</class>
 		<class>br.com.stickerz.model.Pessoa</class>
+		<class>br.com.stickerz.model.Rede</class>
 
 		<exclude-unlisted-classes/>
 
