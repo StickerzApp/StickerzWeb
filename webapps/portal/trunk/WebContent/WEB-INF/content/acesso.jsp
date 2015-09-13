@@ -11,9 +11,6 @@
              <!-- Start Portfolio Section -->
         <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
             <div class="container">
-            	<div class="row">
-                   	<a href="cadastro" class="main-button green">Quero me cadastrar</a>
-            	</div>
 				<s:if test="hasActionErrors()">
             		<script>
 					   $('#myModal').modal('show');
