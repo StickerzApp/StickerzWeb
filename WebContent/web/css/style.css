@@ -46,6 +46,7 @@ body {
     line-height: 21px;
 	font-weight: 300;
 	color: #666;
+	text-decoration: none!important;
 }
 strong, b {
 	font-weight: 600;
@@ -199,6 +200,19 @@ p strong {
 	margin-right: 10px;
 }
 
+
+.imin{
+	color: #e67e22!important;
+	width: 10px;
+	height:10px;
+	top: -24px;
+	left: 10px;
+	font-size: 0.8em!important;
+	background-color: transparent!important;
+	position: relative;
+	text-decoration: none;
+}
+
 a.main-button, input[type="submit"] {
     display: inline-block;
     text-decoration: none;
@@ -206,7 +220,7 @@ a.main-button, input[type="submit"] {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600; 
-    padding: 6px 16px;
+    padding: 10px 16px;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -589,6 +603,7 @@ ul.social-list li:last-child a i {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0;
+    height: 90px;
 }
 
 .navbar-brand {
@@ -759,12 +774,25 @@ ul.social-list li:last-child a i {
 	float: right;
 }
 
+.user-info{
+	background-color: #F9F9F9;
+	min-width: 270px; 
+}
+
+.user-info div{
+	color: #666;
+	font-size: 12px;
+	float: left;
+	font-weight: 600;
+	padding-left: 30px;
+}
+
 .show-login i {
-	font-size: 1.2em !important;
+	font-size: 1.2em;
 	display: block;
 	color: #666;
-	width: 36px;
-	height: 36px;
+	width: 42px;
+	height: 42px;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1129,10 +1157,10 @@ input[type="checkbox"] {
 #contact-form textarea,
 #respond input[type="text"],
 #respond textarea, .email, .password{
-    color: #666fb5;
+    color: #CCC;
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
-    border: 1px solid #eee;
+    border: 1px solid #CCC;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1775,11 +1803,7 @@ input[type="checkbox"] {
 	display: inline-block;
 	color: #fff;
 	margin-right: 5px;
-	font-weight: 300;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
+	font-weight: 600;
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1789,8 +1813,7 @@ input[type="checkbox"] {
 	-moz-box-shadow: 0 4px 0 rgba(0,0,0,0.1) inset;
   	-webkit-box-shadow: 0 4px 0 rgba(0,0,0,0.1) inset;
   	border:0;
-  	text-transform: uppercase;
-  	font-weight: 400;
+  	font-size: 12px;
 }
 
 .btn-system:last-child {
@@ -1866,7 +1889,7 @@ input[type="checkbox"] {
 }
 
 .btn-large {
-	font-size: 14px;
+	font-size: 12px;
 	padding: 9px 22px;
 }
 

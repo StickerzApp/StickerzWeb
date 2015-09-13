@@ -19,13 +19,9 @@
                             <div class="team-member modern">
                                 <!-- Memebr Photo, Name & Position -->
                                 <div class="member-photo">
-                                    <img alt="" src="web/images/team/face_5.png" />
-                                    <div class="member-name">${sessaoUsuario.descNome}<span>Brasília - DF</span>
+                                    <img alt="" src="web/images/team/face_6.png" />
+                                    <div class="member-name">${sessaoUsuario.descNome}<span>Ranking #13.010</span>
                                     </div>
-                                </div>
-                                <!-- Memebr Words -->
-                                <div class="member-info">
-                                    <p>Ranking #13.010</p>
                                 </div>
                                 <!-- Start Progress Bar 1 -->
                                 <div class="progress-label">Campanhas</div>

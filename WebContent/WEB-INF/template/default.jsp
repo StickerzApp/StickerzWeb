@@ -20,6 +20,10 @@
     <meta name="description" content="Margo - Responsive HTML5 Template">
     <meta name="author" content="iThemesLab">
 
+	<link rel="shortcut icon" href="web/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="web/images/favicon.ico" type="image/x-icon">
+
+
     <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="web/asset/css/bootstrap.min.css" type="text/css" media="screen">
 

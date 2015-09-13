@@ -76,6 +76,7 @@
                     		<c:when test="${empty sessaoUsuario}">
 			                        <!-- Start login form -->
 			                        <div class="login-side">
+		                    			<a href="cadastro" class="main-button green">Quero me cadastrar</a>
 			                            <a href="#" class="show-login"><i class="fa fa-user"></i></a>
 			                            <div class="login-form">
 			                                <s:form autocomplete="off" role="search" method="post" action="login" id="loginform">
@@ -103,8 +104,9 @@
 			                        <!-- End login form -->
                     		</c:when>
                     		<c:otherwise>
-                    			<div class="login-side">
-			                           ${sessaoUsuario.descEmail}  <a href="#" class="show-login"><i class="fa fa-user"></i></a>
+                    			<div class="login-side user-info">
+			                          <div> ${sessaoUsuario.descNome}</div>  <a href="#" class="show-login "><i class="fa fa-user"><i class="fa fa-plus-square imin"></i></i></a>
+			                          <br/><div><a href="#">Perfil</a></div><div><a href="#">Notificações</a></div><div><a href="logoff">Sair</a></div>
 	                            </div>
                     		</c:otherwise>
                     			
