@@ -47,6 +47,7 @@ body {
 	font-weight: 300;
 	color: #666;
 	text-decoration: none!important;
+	list-style-type: none!important;
 }
 strong, b {
 	font-weight: 600;
