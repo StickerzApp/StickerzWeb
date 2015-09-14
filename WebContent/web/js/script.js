@@ -669,7 +669,7 @@ function readCookie(name) {
 window.onload = function(e) {
   var cookie = readCookie("style");
   var title = cookie ? cookie : getPreferredStyleSheet();
-  setActiveStyleSheet('green');
+  setActiveStyleSheet('colors');
 }
 
 window.onunload = function(e) {
