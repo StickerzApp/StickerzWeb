@@ -184,114 +184,18 @@
 
                 <!-- Start Recent Projects Carousel -->
                 <ul id="portfolio-list" data-animated="fadeIn">
-                    <li>
-                        <img src="web/images/portfolio-1/1.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Town winter 2013</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/2.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Quarterly Musashino</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/3.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Mainichi April 2014</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/4.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Shitamachi Rocket</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/5.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Majesty express vol. 01</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/6.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Monocle issue 69</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/7.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Monocle issue 69</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/8.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Monocle issue 69</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/9.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Monocle issue 69</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/10.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Monocle issue 69</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/11.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Monocle issue 69</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
-                    <li>
-                        <img src="web/images/portfolio-1/12.png" alt="" />
-                        <div class="portfolio-item-content">
-                            <span class="header">Monocle issue 69</span>
-                            <p class="body">web develpment, design</p>
-                        </div>
-                        <a href="#"><i class="more">+</i></a>
-
-                    </li>
+                
+                	<c:forEach items="listaRedes" var="rede">
+	                    <li>
+	                        <img src="web/images/portfolio-1/1.png" alt="" />
+	                        <div class="portfolio-item-content">
+	                            <span class="header">${nomeRede}</span>
+<!-- 	                            <p class="body">web develpment, design</p> -->
+	                        </div>
+	                        <a href="#"><i class="more">+</i></a>
+	
+	                    </li>
+                	</c:forEach>
                 </ul>
 
                 <!-- End Recent Projects Carousel -->
