@@ -40,18 +40,7 @@
     <link rel="stylesheet" type="text/css" href="web/css/animate.css" media="screen">
 
     <!-- Color CSS Styles  -->
-    <link rel="stylesheet" type="text/css" href="web/css/colors/red.css" title="red" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/jade.css" title="jade" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/green.css" title="green" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/blue.css" title="blue" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/beige.css" title="beige" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/cyan.css" title="cyan" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/orange.css" title="orange" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/peach.css" title="peach" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/pink.css" title="pink" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/purple.css" title="purple" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/sky-blue.css" title="sky-blue" media="screen" />
-    <link rel="stylesheet" type="text/css" href="web/css/colors/yellow.css" title="yellow" media="screen" />
+    <link rel="stylesheet" type="text/css" href="web/css/colors/colors.css" title="colors" media="screen" />
 
 
     <!-- Margo JS  -->
