@@ -26,8 +26,8 @@
 
     $.each(attrs, function (i, attr) {
       if (/^data-in-*/.test(attr.nodeName)) {
-        data.in = data.in || {};
-        data.in[attr.nodeName.replace(/data-in-/, '')] = attr.nodeValue;
+        data.iin = data.iin || {};
+        data.iin[attr.nodeName.replace(/data-in-/, '')] = attr.nodeValue;
       } else if (/^data-out-*/.test(attr.nodeName)) {
         data.out = data.out || {};
         data.out[attr.nodeName.replace(/data-out-/, '')] = attr.nodeValue;
@@ -129,7 +129,7 @@
       return e;
     };
 
-    base.in = function (index, cb) {
+    base.iin = function (index, cb) {
       index = index || 0;
        
       var $elem = base.$texts.find(':nth-child(' + (index + 1) + ')')
@@ -159,17 +159,17 @@
         .find('[class^="char"]')
         .css('display', 'inline-block');
 
-      if (isInEffect(options.in.effect)) {
+      if (isInEffect(options.iin.effect)) {
         $chars.css('visibility', 'hidden');
-      } else if (isOutEffect(options.in.effect)) {
+      } else if (isOutEffect(options.iin.effect)) {
         $chars.css('visibility', 'visible');
       }
 
       base.currentIndex = index;
 
-      animateChars($chars, options.in, function () {
+      animateChars($chars, options.iin, function () {
         base.triggerEvent('inAnimationEnd');
-        if (options.in.callback) options.in.callback();
+        if (options.iin.callback) options.iin.callback();
         if (cb) cb(base);
       });
     };
@@ -193,7 +193,7 @@
       base.triggerEvent('start');
 
       (function run (index) {
-        base.in(index, function () {
+        base.iin(index, function () {
           var length = base.$texts.children().length;
 
           index += 1;
@@ -238,7 +238,7 @@
     loop: false,
     minDisplayTime: 2000,
     initialDelay: 0,
-    in: {
+    iin: {
       effect: 'fadeInLeftBig',
       delayScale: 1.5,
       delay: 50,

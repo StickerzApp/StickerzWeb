@@ -478,7 +478,7 @@ $(document).ready(function ($) {
 	
 	$('.tlt').textillate({
 		loop: true,
-		in: {
+		iin: {
 			effect: 'fadeInUp',
 			delayScale: 2,
 			delay: 50,
