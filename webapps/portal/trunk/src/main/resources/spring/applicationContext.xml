@@ -14,29 +14,29 @@
 	
 	<context:component-scan base-package="br.com.stickerz.dao" />
 	<context:component-scan base-package="br.com.stickerz.service" />
+  
+	<context:property-placeholder location="classpath:spring/jdbc.properties"/>
 	
-	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+    <tx:annotation-driven transaction-manager="txManager" />
+  
+	<bean id="StickerzDs" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="${jdbc.driverClass}" />
 		<property name="jdbcUrl" value="${jdbc.url}" />
 		<property name="user" value="${jdbc.username}" />
 		<property name="password" value="${jdbc.password}" />
 	</bean> 
 
-	<context:property-placeholder location="/WEB-INF/jdbc.properties"/>
-
-
-
-	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-		<property name="dataSource" ref="dataSource" />
+	<bean id="StickerzEmf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceXmlLocation" value="classpath:META-INF/persistence.xml" />
+        <property name="persistenceUnitName" value="StickerzEm" />
+		<property name="dataSource" ref="StickerzDs" />
 		<property name="jpaVendorAdapter">
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
 		</property>
 	</bean>
 	
 	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-		<property name="entityManagerFactory" ref="entityManagerFactory"/>
+		<property name="entityManagerFactory" ref="StickerzEmf"/>
 	</bean>
-	
-	<tx:annotation-driven transaction-manager="txManager" />
-
+  
 </beans>
