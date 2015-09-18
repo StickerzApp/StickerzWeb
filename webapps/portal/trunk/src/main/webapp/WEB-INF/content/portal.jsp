@@ -61,9 +61,9 @@
 							<h4 class="classic-title">
 								<span>Campanhas</span>
 							</h4>
-							<c:forEach items="listaRedes" var="rede">
+							<c:forEach items="${listaRedes}" var="rede">
 			                    <li>
-			                        <img src="web/images/rede1.jpg" alt="" />
+			                        <img src="web/images/rede${rede.idRede}.jpg" alt="" />
 			                    </li>
 		                	</c:forEach>
                          </div>
