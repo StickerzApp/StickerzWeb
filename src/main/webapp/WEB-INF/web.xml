@@ -46,11 +46,11 @@
 	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/applicationContext.xml</param-value>
+		<param-value>classpath:spring/applicationContext.xml</param-value>
 	</context-param>
 
 	<context-param>
 		<param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>
-		<param-value>/WEB-INF/tiles.xml</param-value>
+		<param-value>/WEB-INF/tiles/tiles.xml</param-value>
 	</context-param>
 </web-app>
