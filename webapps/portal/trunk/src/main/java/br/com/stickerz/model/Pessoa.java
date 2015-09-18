@@ -15,10 +15,9 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-
 @Entity
 @Table(name = "pessoa", catalog = "stickerz")
-public class Pessoa implements Serializable{
+public class Pessoa implements Serializable {
 
 	
 	
