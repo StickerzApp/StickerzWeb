@@ -63,7 +63,7 @@
 							</h4>
 							<c:forEach items="${listaRedes}" var="rede">
 			                    <li>
-			                        <img src="web/images/rede${rede.idRede}.jpg" alt="" />
+<%-- 			                        <img src="web/images/rede${rede.idRede}.jpg" alt="" /> --%>
 			                    </li>
 		                	</c:forEach>
                          </div>

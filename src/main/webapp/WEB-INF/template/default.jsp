@@ -109,7 +109,7 @@
 		<div id="container">
 			<t:insertAttribute name="header" />
 			<t:insertAttribute name="middle"/>
-			<t:insertAttribute name="footer" />	
+<%-- 			<t:insertAttribute name="footer" />	 --%>
 		</div>
 	
 	</body>
