@@ -35,6 +35,8 @@
 
     <!-- Responsive CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="web/css/responsive.css" media="screen">
+    <!-- Materialize CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="web/css/materialize.css" media="screen">
 
     <!-- Css3 Transitions Styles  -->
     <link rel="stylesheet" type="text/css" href="web/css/animate.css" media="screen">
@@ -59,6 +61,7 @@
     <script type="text/javascript" src="web/js/jquery.easypiechart.min.js"></script>
     <script type="text/javascript" src="web/js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="web/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="web/js/materialize.js"></script>
     <script type="text/javascript" src="web/js/mediaelement-and-player.js"></script>
     <script type="text/javascript" src="web/js/script.js"></script>
     <script type="text/javascript" src="web/js/cadastro.js"></script>

@@ -776,7 +776,6 @@ ul.social-list li:last-child a i {
 }
 
 .user-info{
-	background-color: #F9F9F9;
 	min-width: 270px; 
 }
 
@@ -794,10 +793,10 @@ ul.social-list li:last-child a i {
 	color: #666;
 	width: 42px;
 	height: 42px;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -o-border-radius: 2px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
 	line-height: 36px;
 	text-align: center;
 	background-color: #f2f2f2;
@@ -2930,9 +2929,25 @@ ul.icons-list li i {
 }
 
 
+#friendslist {margin: 0px;
+padding: 0px;
+width:auto;
+}
+#friendslist ul {
+list-style-position: inside;
+list-style-image: none;
+list-style-type: none;
+}
 
-
-
+#friendslist li{
+float:left;
+display:block;
+list-style-position: inside;
+list-style-image: none;
+list-style-type: none;
+margin: 0px;
+padding: 10px;
+}
 
 /*------------------------------------------*/
 /*	        06 - Portfolio Styles
