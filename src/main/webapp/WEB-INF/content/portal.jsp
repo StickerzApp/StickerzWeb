@@ -102,6 +102,25 @@
 							<h4 class="classic-title">
 								<span>Campanhas</span>
 							</h4>
+							
+							 <div class="card">
+							    <div class="card-image waves-effect waves-block waves-light">
+							  		<a href="#"style="padding-top: 10px;"><img class="activator" src="web/images/friend.png" alt=""  />Marcelo Doido</a>
+							    </div>
+							    <div class="card-content">
+							    	 <img src="web/images/placeholder.png" width="60" height="60" alt="" /><img src="web/images/change.png" width="32" height="32" alt="" /> <img src="web/images/placeholder.png" width="60" height="60"  alt="" />
+							      <p>
+							      <br/>
+							      	<a class="activator main-button green" style="padding: 1px 6px; background-color: green!important;" href="#">Aceitar</a>
+							      	<a class="activator main-button green" style="padding: 1px 6px;" href="#">Recusar</a>
+							      </p>
+							    </div>
+							    <div class="card-reveal">
+							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
+							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
+							    </div>
+							  </div>
                          </div> 
                          <div class="col-md-3">
                          	<!-- Classic Heading -->
@@ -111,17 +130,56 @@
 							
 							 <div class="card">
 							    <div class="card-image waves-effect waves-block waves-light">
-							      <img class="activator" src="web/images/friend.png" alt="" height="20px!important" width="20px!important;" style="padding-left: 6px;padding-top: 6px;float: left;" />
-							  	<span>     Bruno teixeira</span>
+							  		<a href="#"style="padding-top: 10px;"><img class="activator" src="web/images/friend.png" alt=""  />Bruno Teixeira</a>
 							    </div>
 							    <div class="card-content">
-							    	 <img src="web/images/friend.png" alt="" />         >>>>>           <img src="web/images/friend.png" alt="" />
-							      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-							      <p><a href="#">Aceitar</a><a href="#">Recusar</a></p>
+							    	 <img src="web/images/placeholder.png" width="60" height="60" alt="" /><img src="web/images/change.png" width="32" height="32" alt="" /> <img src="web/images/placeholder.png" width="60" height="60"  alt="" />
+							      <p>
+							      <br/>
+							      	<a class="activator main-button green" style="padding: 1px 6px; background-color: green!important;" href="#">Aceitar</a>
+							      	<a class="activator main-button green" style="padding: 1px 6px;" href="#">Recusar</a>
+							      </p>
 							    </div>
 							    <div class="card-reveal">
 							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-							      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
+							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
+							    </div>
+							  </div>
+							 <div class="card">
+							    <div class="card-image waves-effect waves-block waves-light">
+							  		<a href="#"style="padding-top: 10px;"><img class="activator" src="web/images/friend.png" alt=""  />Marcelo Doido</a>
+							    </div>
+							    <div class="card-content">
+							    	 <img src="web/images/placeholder.png" width="60" height="60" alt="" /><img src="web/images/change.png" width="32" height="32" alt="" /> <img src="web/images/placeholder.png" width="60" height="60"  alt="" />
+							      <p>
+							      <br/>
+							      	<a class="activator main-button green" style="padding: 1px 6px; background-color: green!important;" href="#">Aceitar</a>
+							      	<a class="activator main-button green" style="padding: 1px 6px;" href="#">Recusar</a>
+							      </p>
+							    </div>
+							    <div class="card-reveal">
+							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
+							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
+							    </div>
+							  </div>
+							 <div class="card">
+							    <div class="card-image waves-effect waves-block waves-light">
+							  		<a href="#"style="padding-top: 10px;"><img class="activator" src="web/images/friend.png" alt=""  />Gustavo Guaxinim</a>
+							    </div>
+							    <div class="card-content">
+							    	 <img src="web/images/placeholder.png" width="60" height="60" alt="" /><img src="web/images/change.png" width="32" height="32" alt="" /> <img src="web/images/placeholder.png" width="60" height="60"  alt="" />
+							      <p>
+							      <br/>
+							      	<a class="activator main-button green" style="padding: 1px 6px; background-color: green!important;" href="#">Aceitar</a>
+							      	<a class="activator main-button green" style="padding: 1px 6px;" href="#">Recusar</a>
+							      </p>
+							    </div>
+							    <div class="card-reveal">
+							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
+							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
 							    </div>
 							  </div>
                          </div> 

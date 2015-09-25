@@ -87,17 +87,23 @@
 
 .card .card-image {
 	position: relative;
+padding-top: 6px;
 }
 
 .card .card-image img {
 	display: block;
-	border-radius: 2px 2px 0 0;
 	position: relative;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+	width: 32px;
+	float: left;
+	padding-left: 6px;
+	vertical-align: middle;
 }
+
+.card .card-image a {
+	padding-left: 9px;
+	font-weight: 600;
+	text-decoration: none!important;
+	}	
 
 .card .card-image .card-title {
 	position: absolute;
@@ -109,7 +115,10 @@
 .card .card-content {
 	padding: 20px;
 	border-radius: 0 0 2px 2px;
+	height: 140px;
+	text-align: center;
 }
+
 
 .card .card-content p {
 	margin: 0;
@@ -150,6 +159,7 @@
 	height: 100%;
 	z-index: 1;
 	display: none;
+	text-align: center;
 }
 
 .card .card-reveal .card-title {
