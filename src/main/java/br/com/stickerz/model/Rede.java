@@ -41,6 +41,58 @@ public class Rede implements Serializable {
 	}
 
 
+	public int getIdRede() {
+		return idRede;
+	}
+
+
+	public void setIdRede(int idRede) {
+		this.idRede = idRede;
+	}
+
+
+	public String getNomeRede() {
+		return nomeRede;
+	}
+
+
+	public void setNomeRede(String nomeRede) {
+		this.nomeRede = nomeRede;
+	}
+
+
+	public Double getValorTicketMedio() {
+		return valorTicketMedio;
+	}
+
+
+	public void setValorTicketMedio(Double valorTicketMedio) {
+		this.valorTicketMedio = valorTicketMedio;
+	}
+
+
+	public boolean isBolAtivo() {
+		return bolAtivo;
+	}
+
+
+	public void setBolAtivo(boolean bolAtivo) {
+		this.bolAtivo = bolAtivo;
+	}
+
+
+	public String getPathImagemRede() {
+		return pathImagemRede;
+	}
+
+
+	public void setPathImagemRede(String pathImagemRede) {
+		this.pathImagemRede = pathImagemRede;
+	}
+	
+	
+
+
 
 	
 }

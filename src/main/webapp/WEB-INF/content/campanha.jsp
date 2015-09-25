@@ -61,57 +61,56 @@
                          
                          	<!-- Classic Heading -->
 							<h4 class="classic-title">
-								<span>Amigos
-								</span>
+								<span>${model.nomeRede}</span>
 							</h4>
 							
-<%-- 							<c:forEach items="${listaRedes}" var="rede"> --%>
-								<ul id="friendslist">
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-			                    <li>
-			                        <img src="web/images/friend.png" alt="" />
-			                    </li>
-								</ul>
-<%-- 		                	</c:forEach> --%>
+							<img src="web/images/rede${model.codigoRede}.png" alt="" /> 
+							
+							<br/><br/><br/>
+							
+<!-- 							Start Progress Bar 2 --> 
+                                <div class="progress-label">Níveis</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" data-progress-animation="100%" data-appear-animation-delay="800">
+                                        <span class="percentage">12</span>
+                                    </div>
+                                </div>
+<!-- 							Start Progress Bar 2 --> 
+                                <div class="progress-label">Participantes</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" data-progress-animation="100%" data-appear-animation-delay="800">
+                                        <span class="percentage">1.225</span>
+                                    </div>
+                                </div>
+
+
+							<span>Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.</span>
+							<span>Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.</span>
+							<br/>
+							<br/>
+							<br/>
+							<h4 class="classic-title">
+							</h4>
+							<strong>Regulamento</strong>
+							<br/>
+							<span>Descrição do regulamento Descrição do regulamento Descrição do regulamento Descrição do regulamento Descrição do regulamento Descrição do regulamento Descrição do regulamento Descrição do regulamento Descrição do regulamento Descrição do regulamento </span>
+							
                          </div>
                          <div class="col-md-6">
                          	<!-- Classic Heading -->
 							<h4 class="classic-title">
-								<span>Campanhas</span>
+								<span>Níveis</span>
 							</h4>
 							 <div class="card">
 							    <div class="card-image waves-effect waves-block waves-light">
-							  		<a href="abrirCampanha?codigoRede=1"style="padding-top: 10px;"> <img class="activator"  src="web/images/rede1.png" alt=""  />Mc Donald's</a> <span> 16 níveis</span>
+							  		<a href="abrirNivel?codigoNivel=1"style="padding-top: 10px;"> <img class="activator"  src="web/images/placeholder.png" alt=""  />Nível 1</a> <span> 6 Stickerz</span>
 							  		<div style="float: right;">
-								      <img src="web/images/favicon.ico" style="width: 24px!important;height: 18px!important;" alt="" />  32<strong>/118     </strong>
+								      <img src="web/images/favicon.ico" style="width: 24px!important;height: 18px!important;" alt="" />  6<strong>/6     </strong>
 									</div>
 							    </div>
 							    <div class="card-content">
-<!-- 							    	 <img src="web/images/placeholder.png" style="float: left;" width="60" height="60" alt="" /> -->
-							    	 
+							    <span>Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.
+							    Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.</span>
 							    </div>
 							    <div class="card-reveal">
 							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -119,16 +118,33 @@
 							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
 							    </div>
 							  </div>
-							 <div class="card">
+							   <div class="card">
 							    <div class="card-image waves-effect waves-block waves-light">
-							  		<a href="abrirCampanha?codigoRede=2"style="padding-top: 10px;"> <img class="activator"  src="web/images/rede2.png" alt=""  />Giraffas</a> <span> 12 níveis</span>
+							  		<a href="abrirNivel?codigoNivel=1"style="padding-top: 10px;"> <img class="activator"  src="web/images/placeholder.png" alt=""  />Nível 2</a> <span> 10 Stickerz</span>
 							  		<div style="float: right;">
-								      <img src="web/images/favicon.ico" style="width: 24px!important;height: 18px!important;" alt="" />  14<strong>/90     </strong>
+								      <img src="web/images/favicon.ico" style="width: 24px!important;height: 18px!important;" alt="" />  8<strong>/10     </strong>
 									</div>
 							    </div>
 							    <div class="card-content">
-<!-- 							    	 <img src="web/images/placeholder.png" style="float: left;" width="60" height="60" alt="" /> -->
-							    	 
+							    <span>Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.
+							    Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.</span>
+							    </div>
+							    <div class="card-reveal">
+							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
+							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
+							    </div>
+							  </div>
+							   <div class="card">
+							    <div class="card-image waves-effect waves-block waves-light">
+							  		<a href="abrirNivel?codigoNivel=1"style="padding-top: 10px;"> <img class="activator"  src="web/images/placeholder.png" alt=""  />Nível 3</a> <span> 4 Stickerz</span>
+							  		<div style="float: right;">
+								      <img src="web/images/favicon.ico" style="width: 24px!important;height: 18px!important;" alt="" />  0<strong>/4     </strong>
+									</div>
+							    </div>
+							    <div class="card-content">
+							    <span>Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.
+							    Descrição do nível, como o prêmio que é ganho para esse nível após completar toda a tabela do stickerz.</span>
 							    </div>
 							    <div class="card-reveal">
 							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -140,63 +156,9 @@
                          <div class="col-md-3">
                          	<!-- Classic Heading -->
 							<h4 class="classic-title">
-								<span>Trocas</span>
+								<span>Cupons</span>
 							</h4>
-							
-							 <div class="card">
-							    <div class="card-image waves-effect waves-block waves-light">
-							  		<a href="#"style="padding-top: 10px;"><img class="activator" src="web/images/friend.png" alt=""  />Bruno Teixeira</a>
-							    </div>
-							    <div class="card-content">
-							    	 <img src="web/images/placeholder.png" width="60" height="60" alt="" /><img src="web/images/change.png" width="32" height="32" alt="" /> <img src="web/images/placeholder.png" width="60" height="60"  alt="" />
-							      <p>
-							      <br/>
-							      	<a class="activator main-button green" style="padding: 1px 6px; background-color: green!important;" href="#">Aceitar</a>
-							      	<a class="activator main-button green" style="padding: 1px 6px;" href="#">Recusar</a>
-							      </p>
-							    </div>
-							    <div class="card-reveal">
-							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
-							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
-							    </div>
-							  </div>
-							 <div class="card">
-							    <div class="card-image waves-effect waves-block waves-light">
-							  		<a href="#"style="padding-top: 10px;"><img class="activator" src="web/images/friend.png" alt=""  />Marcelo Doido</a>
-							    </div>
-							    <div class="card-content">
-							    	 <img src="web/images/placeholder.png" width="60" height="60" alt="" /><img src="web/images/change.png" width="32" height="32" alt="" /> <img src="web/images/placeholder.png" width="60" height="60"  alt="" />
-							      <p>
-							      <br/>
-							      	<a class="activator main-button green" style="padding: 1px 6px; background-color: green!important;" href="#">Aceitar</a>
-							      	<a class="activator main-button green" style="padding: 1px 6px;" href="#">Recusar</a>
-							      </p>
-							    </div>
-							    <div class="card-reveal">
-							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
-							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
-							    </div>
-							  </div>
-							 <div class="card">
-							    <div class="card-image waves-effect waves-block waves-light">
-							  		<a href="#"style="padding-top: 10px;"><img class="activator" src="web/images/friend.png" alt=""  />Gustavo Guaxinim</a>
-							    </div>
-							    <div class="card-content">
-							    	 <img src="web/images/placeholder.png" width="60" height="60" alt="" /><img src="web/images/change.png" width="32" height="32" alt="" /> <img src="web/images/placeholder.png" width="60" height="60"  alt="" />
-							      <p>
-							      <br/>
-							      	<a class="activator main-button green" style="padding: 1px 6px; background-color: green!important;" href="#">Aceitar</a>
-							      	<a class="activator main-button green" style="padding: 1px 6px;" href="#">Recusar</a>
-							      </p>
-							    </div>
-							    <div class="card-reveal">
-							      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-							      <img src="web/images/placeholder.png" width="60" height="60" alt="" />
-							      <p>Você acaba de receber um novo sticker. <a href="#">Quer vê-lo ?</a></p>
-							    </div>
-							  </div>
+							<span><strong>Você não possui cupons para esta campanha.</strong></span>
                          </div> 
                         
             </div><!--.row -->

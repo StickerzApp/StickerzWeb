@@ -90,7 +90,7 @@
 padding-top: 6px;
 }
 
-.card .card-image img {
+.card .card-image   img {
 	display: block;
 	position: relative;
 	width: 32px;
