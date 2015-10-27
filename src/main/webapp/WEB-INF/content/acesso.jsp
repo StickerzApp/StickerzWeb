@@ -6,161 +6,247 @@
 <t:insertDefinition name=".template.default">
 	<t:putAttribute name="middle" >
        
-       
-        <!-- Start Services Section -->
-             <!-- Start Portfolio Section -->
         <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+        
+<!--        Início do container geral -->
             <div class="container">
 				<s:if test="hasActionErrors()">
             		<script>
 					   $('#myModal').modal('show');
             		</script>
 				</s:if>
-            	
-<!--                       Start Purchase Section -->
-                <div class="row">
-				        <div class="section purchase">
-				            <div class="container">
-<!-- 				                Start Video Section Content -->
-				                <div class="section-video-content text-center">
 				
-<!-- <!-- 				                    Start Animations Text --> 
-<!-- 				                    <h1 class="fittext wite-text uppercase tlt"> -->
-<%-- 				                      <span class="texts"> --%>
-<%-- 				                        <span>Modern</span> --%>
-<%-- 				                        <span>Clean</span> --%>
-<%-- 				                        <span>Awesome</span> --%>
-<%-- 				                        <span>Cool</span> --%>
-<%-- 				                        <span>Great</span> --%>
-<%-- 				                      </span> --%>
-<%-- 				                        Margo Template is Ready for <br/>Business, Agency <strong>or</strong> Creative Portfolios --%>
-<!-- 				                    </h1> -->
-<!-- <!-- 				                    End Animations Text --> 
-				
-				
-<!-- <!-- 				                    Start Buttons --> 
-<!-- 				                    <a href="#" class="btn-system btn-large"><i class="fa fa-tasks"></i> Check Out Features</a> -->
-<!-- 				                    <a href="#" class="btn-system btn-large btn-wite"><i class="fa fa-download"></i> Purchase This Now</a> -->
-				
-				                </div>
-<!-- 				                End Section Content -->
-				
-				            </div><!-- .container -->
-				        </div>
-<!-- 				        End Purchase Section -->
-                    
-                              </div><!-- .row -->
-            </div><!-- .container -->
+<!-- 			Início do slider de publicidade -->
+                <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+			        <!-- Loading Screen -->
+			        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+			            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+			            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+			        </div>
+			        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+			            <div data-p="225.00" style="display: none;">
+			                <img data-u="image" src="web/images/red.jpg" />
+			            </div>
+			            <div data-p="225.00" style="display: none;">
+			                <img data-u="image" src="web/images/purple.jpg" />
+			            </div>
+			            <div data-p="225.00" style="display: none;">
+			                <img data-u="image" src="web/images/blue.jpg" />
+			            </div>
+			        </div>
+			        
+<!--		        Navegador inferior do slider -->
+			        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+			            <div data-u="prototype" style="width:16px;height:16px;"></div>
+			        </div>
+			        
+<!-- 			    Navegador lateral de setas -->
+			        <span data-u="arrowleft" class="jssora22l" style="top:123px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+			        <span data-u="arrowright" class="jssora22r" style="top:123px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+			        <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+			    </div>
+			    
+			    
+			    
+	<!--	 	Como funciona -->
+		        <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+		
+	<!-- 				Título seção -->
+		                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+		                    <h1>Não conhece o <strong>stickerz</strong> ? Saiba como funciona</h1>
+		                </div>
+		                
+	<!-- 				Subtítulo seção	 -->
+		                <p class="text-center">Descubra como funciona <strong>o mais novo e divertido programa de recompensas</strong> do mercado.</p>
+		
+		
+	<!--				Passo a passo -->
+		                <ul id="portfolio-list" data-animated="fadeIn">
+	<!--                		Passo 1 - Compra -->
+			                    <li>
+			                        <img src="web/images/passo1.png" alt="" />
+			                        <div class="portfolio-item-content">
+			                            <span class="header">${nomeRede}</span>
+				                        <a href="#">Tabela de stickerz por estabelecimento</a>
+			                        </div>
+			                        <br/>
+			                        <div style="text-align: justify;margin: 4px 4px 4px 4px;">Realize uma compra em um dos estabelecimentos das redes participantes e ganhe um ou mais stickerz.<br/> </div>
+			                    </li>
+	<!--                		Passo 2 - Registre seus stickerz-->
+			                    <li>
+			                        <img src="web/images/passo2.png" alt="" />
+			                        <div class="portfolio-item-content">
+			                            <span class="header">${nomeRede}</span>
+			                            <p class="body">descrição do passo 2</p>
+			                        </div>
+			                        <br/>
+			                        <div style="text-align: justify;margin: 4px 4px 4px 4px;">Acesse o site e registre o código presente no cupom de sua compra.É necessário estar cadastrado no site.<br/> </div>
+			                    </li>
+	<!--                		Passo 3 - Colecione-->
+			                    <li>
+			                        <img src="web/images/passo3.png" alt="" />
+			                        <div class="portfolio-item-content">
+			                            <span class="header">${nomeRede}</span>
+			                            <p class="body">descrição do passo 3</p>
+			                        </div>
+			                        <br/>
+			                        <div style="text-align: justify;margin: 4px 4px 4px 4px;">Complete os níveis das campanhas para ganhar recompensas.Você poderá trocar com seus amigos seus stickerz repetidos.<br/> </div>
+			
+			                    </li>
+	<!--                		Passo 4 - Resgate-->
+			                    <li>
+			                        <img src="web/images/passo3.png" alt="" />
+			                        <div class="portfolio-item-content">
+			                            <span class="header">${nomeRede}</span>
+			                            <p class="body">descrição do passo 4</p>
+			                        </div>
+			                        <br/>
+			                        <div style="text-align: justify;margin: 4px 4px 4px 4px;">Vá até o terminal do stickerz no estabelecimento, informe o código do seu cupom e imprima seu vale recompensa para resgatar seu prêmio.</div>
+			                    </li>
+		                </ul>
+		
+		    
+	            </div>
+
+
+
+	<!-- 	Título da seção -->
+	         <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+	             <h1>Redes participantes</h1>
+	         </div>
+	
+	<!-- 	Lista de redes participantes -->
+			<div class="our-clients">
+				<div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5" data-navigation="true">
+					
+	<!--			Rede participante -->
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c1.png" alt="" /></a>
+					</div>
+					
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c2.png" alt="" /></a>
+					</div>
+					
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c3.png" alt="" /></a>
+					</div>
+					
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c4.png" alt="" /></a>
+					</div>
+					
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c5.png" alt="" /></a>
+					</div>
+					
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c6.png" alt="" /></a>
+					</div>
+					
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c7.png" alt="" /></a>
+					</div>
+					
+					<div class="client-item item">
+						<a href="#"><img src="web/images/c8.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
         </div>
+	</div>
+	</t:putAttribute>
+</t:insertDefinition>
+	
         <!-- End Services Section -->
                     
-<!--                             <div class="section service"> -->
+<!--               <div class="section service "> -->
                     
                     
-                    
-<!--                     Start Big Heading -->
 <!-- 	                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01"> -->
 <%-- 	                    <h1>Como <strong>funciona ?</strong></h1> --%>
 <!-- 	                </div> -->
-<!-- 	                End Big Heading -->
-                    
-                    
-<!--                     Start Service Icon 1 -->
+
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-download icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
-<!--                             <h4>Download do aplicativo</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <h4>Cadastre-se</h4> -->
+<!--                             <p>Cadastre seu CPF e informações de acesso em nosso site</p> -->
 
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 1 -->
 
-<!--                     Start Service Icon 2 -->
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-user icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
-<!--                             <h4>Acesso</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <h4>Estabelecimentos participantes</h4> -->
+<!--                             <p>Vá até um dos milhares de estabelecimentos que usam o Stickerz</p> -->
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 2 -->
 
-<!--                     Start Service Icon 3 -->
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="03"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-bars icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
-<!--                             <h4>Campanhas</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <h4>Consumo</h4> -->
+<!--                             <p>Forneça seu CPF no momento da compra para ganhar stickerz</p> -->
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 3 -->
 
-<!--                     Start Service Icon 4 -->
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="04"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-cutlery icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
-<!--                             <h4>Consumo</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <h4>Acúmulo</h4> -->
+<!--                             <p>Em uma única compra você pode acumular um ou mais stickerz !</p> -->
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 4 -->
 
-<!--                     Start Service Icon 5 -->
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="05"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-th icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
 <!--                             <h4>Colecione</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <p>Colecione os stickerz e troque com seus amigos para completar sua cartela</p> -->
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 5 -->
 
-<!--                     Start Service Icon 6 -->
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="06"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-ticket icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
 <!--                             <h4>Cupom</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <p>Após completar sua cartela,você gera um cupom para resgatar sua recompensa.</p> -->
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 6 -->
-
-<!--                     Start Service Icon 7 -->
+                    
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="07"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-gift icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
 <!--                             <h4>Resgate</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <p>Vá até o estabelecimento indicado e resgate seu prêmio</p> -->
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 7 -->
-
-<!--                     Start Service Icon 8 -->
+                    
 <!--                     <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="08"> -->
 <!--                         <div class="service-icon"> -->
 <!--                             <i class="fa fa-graduation-cap icon-large"></i> -->
 <!--                         </div> -->
 <!--                         <div class="service-content"> -->
 <!--                             <h4>Nível</h4> -->
-<!--                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p> -->
+<!--                             <p>Continue completando os níveis para ganhar recompensas ainda melhores</p> -->
 <!--                         </div> -->
 <!--                     </div> -->
-<!--                     End Service Icon 8 -->
 
 <!--       </div> -->
         
@@ -169,43 +255,7 @@
         
         
         
-<!--         Start Portfolio Section -->
-<!--         <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;"> -->
 
-<!--                 Start Big Heading -->
-<!--                 <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01"> -->
-<%--                     <h1><strong>Campanhas</strong></h1> --%>
-<!--                 </div> -->
-<!--                 End Big Heading -->
-
-<!--                 <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore -->
-<!--                     <br/>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p> -->
-
-
-<!--                 Start Recent Projects Carousel -->
-<!--                 <ul id="portfolio-list" data-animated="fadeIn"> -->
-                
-<%--                 	<c:forEach items="listaRedes" var="rede"> --%>
-<!-- 	                    <li> -->
-<!-- 	                        <img src="web/images/portfolio-1/1.png" alt="" /> -->
-<!-- 	                        <div class="portfolio-item-content"> -->
-<%-- 	                            <span class="header">${nomeRede}</span> --%>
-<!-- <!-- 	                            <p class="body">web develpment, design</p> --> -->
-<!-- 	                        </div> -->
-<!-- 	                        <a href="#"><i class="more">+</i></a> -->
-	
-<!-- 	                    </li> -->
-<%--                 	</c:forEach> --%>
-<!--                 </ul> -->
-
-<!--                 End Recent Projects Carousel -->
-
-                
-
-<!--         </div> -->
-<!--         End Portfolio Section -->
-        
-        
         
         
             
@@ -734,59 +784,11 @@
 <!-- 		</div> -->
 <!-- 		<!-- End Big Heading --> 
 		
-<!-- 		<!--Start Clients Carousel--> 
-<!-- 		<div class="our-clients"> -->
-<!-- 			<div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5" data-navigation="true"> -->
-				
-<!-- 				Client 1 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c1.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 				Client 2 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c2.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 				Client 3 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c3.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 				Client 4 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c4.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 				Client 5 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c5.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 				Client 6 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c6.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 				Client 7 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c7.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 				Client 8 -->
-<!-- 				<div class="client-item item"> -->
-<!-- 					<a href="#"><img src="web/images/c8.png" alt="" /></a> -->
-<!-- 				</div> -->
-				
-<!-- 			</div> -->
-<!-- 		</div> -->
-<!-- 		<!-- End Clients Carousel --> 
+
 <!--             </div>.row -->
 <!--         </div>.container -->
 <!--         </div> -->
 <!--         End Client/Partner Section -->
-	</t:putAttribute>
-</t:insertDefinition>
 
 
 

@@ -65,6 +65,9 @@
     <script type="text/javascript" src="web/js/mediaelement-and-player.js"></script>
     <script type="text/javascript" src="web/js/script.js"></script>
     <script type="text/javascript" src="web/js/cadastro.js"></script>
+    <script type="text/javascript" src="web/js/jssor.slider.debug.js"></script>
+    <script type="text/javascript" src="web/js/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="web/js/jssor.slider.mini.js"></script>
 
     <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
