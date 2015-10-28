@@ -111,7 +111,7 @@
 	            
 	            
 <!-- 	            Download dos aplicativo -->
-		        <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+		        <div class="section full-width-portfolio gray-background" style="border-top:0; border-bottom:0;">
 		
 	<!-- 				Título seção -->
 		                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
@@ -130,7 +130,7 @@
 		
 	            
 	            
-
+<br/><br/><br/>
 
 
 	<!-- 	Título da seção -->
