@@ -107,6 +107,29 @@
 		
 		    
 	            </div>
+	            
+	            
+	            
+<!-- 	            Download dos aplicativo -->
+		        <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+		
+	<!-- 				Título seção -->
+		                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+		                    <h1>Faça agora mesmo o <strong>download do aplicativo stickerz</strong> ? É 100% gratuito</h1>
+		                </div>
+		                
+	<!-- 				Subtítulo seção	 -->
+		                <p class="text-center">Faça o download do stickerz na <strong>Playstore ou Apple Store </strong> e comece a colecionar stickerz e recompensas.</p>
+		                
+		                <div class="text-center">
+		                	<img src="web/images/aplicativomockup.png"/>
+		                	<img src="web/images/applestore.png"/>
+		                	<img src="web/images/playstore.png"/>
+		                </div>
+                </div>
+		
+	            
+	            
 
 
 
@@ -118,42 +141,40 @@
 	<!-- 	Lista de redes participantes -->
 			<div class="our-clients">
 				<div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5" data-navigation="true">
-					
-	<!--			Rede participante -->
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c1.png" alt="" /></a>
-					</div>
-					
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c2.png" alt="" /></a>
-					</div>
-					
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c3.png" alt="" /></a>
-					</div>
-					
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c4.png" alt="" /></a>
-					</div>
-					
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c5.png" alt="" /></a>
-					</div>
-					
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c6.png" alt="" /></a>
-					</div>
-					
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c7.png" alt="" /></a>
-					</div>
-					
-					<div class="client-item item">
-						<a href="#"><img src="web/images/c8.png" alt="" /></a>
-					</div>
+					<c:forEach items="${listaRedes}" var="rede">
+		<!--			Rede participante -->
+						<div class="client-item item">
+							<a href="abrirCampanha?codigoRede=${rede.idRede}"><img src="web/images/rede${rede.idRede}.png" style="width: 100px;height: 100px;" alt="${rede.nomeRede}"/></a>
+						</div>
+					</c:forEach>
 				</div>
 			</div>
         </div>
+        
+       <br/><br/><br/><br/>
+<!--   Convidar/Sugerir Novos parceiros -->
+       <div class="section service orange-background">
+	                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+	                    <h1 class="white-color">Como assim aqui <strong> não tem stickerz </strong> ? </h1>
+	                </div>
+
+                    <div class="col-md-6 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
+                        <div class="service-content">
+                            <h4 class="white-color">Quer ter stickerz no seu estabelecimento ?</h4><br/>
+                            <a href="#" class="main-button darkorange">Seja nosso parceiro</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
+                        <div class="service-content">
+                            <h4 class="white-color">Não tem stickerz no seu lugar favorito ?</h4><br/>
+                            <a href="#" class="main-button darkorange">Sugira um estabelecimento</a>
+                        </div>
+                    </div>
+                    <br/>
+                      <p class="text-center white-color"><strong>Ajude-nos a expandir o stickerz para vários estabelecimentos, assim você ganha mais e tem stickerz em todos os seus lugares favoritos.</strong></p>
+                    
+      </div>
 	</div>
 	</t:putAttribute>
 </t:insertDefinition>

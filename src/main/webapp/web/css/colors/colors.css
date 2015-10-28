@@ -6,6 +6,17 @@
 	background-color: #d35400!important;
 }
 
+
+.darkorange{
+	background-color: #d35400!important;
+}
+.darkorange:hover{
+	background-color: white!important;
+	color:#d35400!important;
+}
+
+
+
 .blue{
 	background-color: #204197!important;
 }
@@ -340,7 +351,7 @@ ul.post-meta li a:hover {
 
 
 #portfolio-list li .portfolio-item-content {
-    background: rgba(148, 197, 35, 0.9);
+/*     background: #e67e22; */
 }
 
 .services-3-icon i {
