@@ -179,7 +179,12 @@
       <artifactId>tiles-jsp</artifactId>
       <version>${tiles2.version}</version>
     </dependency>
-
+    
+    <dependency>
+		<groupId>javax.mail</groupId>
+		<artifactId>javax.mail-api</artifactId>
+		<version>1.5.4</version>
+	</dependency>
   </dependencies>
 
   <build>

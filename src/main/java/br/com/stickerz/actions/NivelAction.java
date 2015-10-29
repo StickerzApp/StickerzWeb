@@ -6,9 +6,7 @@ import org.apache.struts2.convention.annotation.Result;
 
 import com.opensymphony.xwork2.ModelDriven;
 
-import br.com.stickerz.service.RedeService;
 import br.com.stickerz.vo.NivelVo;
-import br.com.stickerz.vo.RedeVo;
 
 
 public class NivelAction extends BaseAction implements ModelDriven<NivelVo>{
