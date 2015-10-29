@@ -7,15 +7,6 @@
 	<t:putAttribute name="middle" >
        
         <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
-        
-<!--        Início do container geral -->
-            <div class="container">
-				<s:if test="hasActionErrors()">
-            		<script>
-					   $('#myModal').modal('show');
-            		</script>
-				</s:if>
-				
 <!-- 			Início do slider de publicidade -->
                 <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
 			        <!-- Loading Screen -->
@@ -45,6 +36,15 @@
 			        <span data-u="arrowright" class="jssora22r" style="top:123px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
 			        <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
 			    </div>
+        
+<!--        Início do container geral -->
+            <div class="container">
+				<s:if test="hasActionErrors()">
+            		<script>
+					   $('#myModal').modal('show');
+            		</script>
+				</s:if>
+				
 			    
 			    
 			    
@@ -109,9 +109,12 @@
 	            </div>
 	            
 	            
-	            
+
+        </div>
+        
+        	            
 <!-- 	            Download dos aplicativo -->
-		        <div class="section full-width-portfolio gray-background" style="border-top:0; border-bottom:0;">
+		        <div class="section service gray-background" >
 		
 	<!-- 				Título seção -->
 		                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
@@ -139,7 +142,7 @@
 	         </div>
 	
 	<!-- 	Lista de redes participantes -->
-			<div class="our-clients">
+			<div class="our-clients" >
 				<div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5" data-navigation="true">
 					<c:forEach items="${listaRedes}" var="rede">
 		<!--			Rede participante -->
@@ -149,7 +152,6 @@
 					</c:forEach>
 				</div>
 			</div>
-        </div>
         
        <br/><br/><br/><br/>
 <!--   Convidar/Sugerir Novos parceiros -->
